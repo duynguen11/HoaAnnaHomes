@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  theme: {
-    extend: {
-      fontFamily: {
-        inter: ['Inter', 'sans-serif'], // Đặt tên font là 'inter'
-      },
+export const content = ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"];
+export const theme = {
+  extend: {
+    fontFamily: {
+      inter: ["Inter", "sans-serif"], // Đặt tên font là 'inter'
     },
   },
-  plugins: [],
+};
+export const plugins = [];
+export const corePlugins = {
+  preflight: false, // Nếu cần, bạn có thể tắt preflight để tránh xung đột với các CSS khác
 };
