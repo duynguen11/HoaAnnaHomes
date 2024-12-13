@@ -1,0 +1,36 @@
+.swiper-pagination {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 16px;
+  color: #1e1892; /* Màu tím cho số đếm */
+}
+
+.swiper-pagination .swiper-pagination-current {
+  font-weight: bold;
+  color: #ff5722; /* Màu sắc cho slide hiện tại */
+}
+
+.swiper-pagination .swiper-pagination-total {
+  color: #9e9e9e; /* Màu sắc cho tổng số slide */
+}
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 22px;
+  height: 4px;
+  background: #a2a2a2;
+  padding: 0 5px;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #1e3a8a;
+  padding: 0 45px;
+}
