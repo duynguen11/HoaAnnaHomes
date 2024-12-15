@@ -45,7 +45,7 @@ const SlideSection = () => {
   return (
     <div className="p-6">
       <div
-        className="max-w-7xl mx-auto h-[50vh] md:h-[60vh] lg:h-[70vh] rounded relative overflow-hidden"
+        className="max-w-7xl w-full mx-auto h-[50vh] md:h-[60vh] lg:h-[75vh] rounded relative overflow-hidden"
         onMouseEnter={() => setIsPaused(true)} // Tạm dừng khi hover
         onMouseLeave={() => setIsPaused(false)} // Tiếp tục khi rời chuột
       >

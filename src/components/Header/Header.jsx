@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogPanel,
@@ -19,14 +20,9 @@ import {
   FingerPrintIcon,
   SquaresPlusIcon,
   XMarkIcon,
-  CircleStackIcon,
 } from "@heroicons/react/24/outline";
 
-import {
-  ChevronDownIcon,
-  PhoneIcon,
-  PlayCircleIcon,
-} from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import {
   FaTiktok,
@@ -35,7 +31,7 @@ import {
   FaFacebook,
   FaLinkedin,
 } from "react-icons/fa";
-import { HomeIcon, BuildingOfficeIcon } from "@heroicons/react/24/outline";
+import { HomeIcon } from "@heroicons/react/24/outline";
 import IquiLogo from "../../assets/images/IQUI-logo.png";
 import "./Header.css";
 
@@ -227,7 +223,7 @@ export default function Example() {
         }`}
       >
         <div className="py-1 flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <div className="flex flex-col items-center">
               <img alt="Iqui Logo" src={IquiLogo} className="h-10 w-auto" />
               <p
@@ -237,7 +233,7 @@ export default function Example() {
                 YOUR TRUSTED REAL ESTATE ADVISOR
               </p>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -409,12 +405,12 @@ export default function Example() {
           >
             TUYỂN DỤNG
           </a>
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="p-2 text-xs font-semibold text-gray-500 hover:text-blue-700"
           >
             GIỚI THIỆU
-          </a>
+          </Link>
         </PopoverGroup>
       </nav>
       <Dialog
