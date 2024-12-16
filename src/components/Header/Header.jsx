@@ -41,7 +41,12 @@ const products = [
     description: "Get a better understanding of your traffic",
     href: "#",
     icon: HomeIcon,
-    submenu: ["QUẬN 1", "BÌNH THẠNH", "THỦ THIÊM", "QUẬN 2"],
+    submenu: [
+      { name: "QUẬN 1", url: "/realestateQ1" },
+      { name: "BÌNH THẠNH", url: "/realestateBT" },
+      { name: "THỦ THIÊM", url: "/realestateTT" },
+      { name: "QUẬN 2", url: "/apartments/district-2" },
+    ],
   },
   {
     name: "CĂN HỘ CHUYỂN NHƯỢNG",
@@ -70,10 +75,10 @@ const products = [
 ];
 
 const productmobile = [
-  { name: "QUẬN 1", href: "#" },
-  { name: "BÌNH THẠNH", href: "#" },
-  { name: "THỦ THIÊM", href: "#" },
-  { name: "QUẬN 2", href: "#" },
+  { name: "QUẬN 1", href: "/realestateQ1" },
+  { name: "BÌNH THẠNH", href: "/about" },
+  { name: "THỦ THIÊM", href: "/about" },
+  { name: "QUẬN 2", href: "/about" },
 ];
 
 const markets = [
@@ -295,10 +300,10 @@ export default function Example() {
                         {item.submenu.map((subItem, index) => (
                           <a
                             key={index}
-                            href="#"
+                            href={subItem.url} // Dùng URL từ submenu
                             className="block rounded px-4 py-2 text-xs font-semibold text-gray-500 hover:bg-gray-200"
                           >
-                            {subItem}
+                            {subItem.name}
                           </a>
                         ))}
                       </div>
@@ -477,15 +482,15 @@ export default function Example() {
                             {isAreaOpen && (
                               <Disclosure.Panel className="mt-2 space-y-2 pl-6">
                                 {productmobile.map((area) => (
-                                  <a
+                                  <Link
                                     key={area.name}
-                                    href={area.href}
+                                    to={area.href}
                                     className="block rounded py-3 pl-6 pr-3 text-sm text-gray-600 hover:bg-gray-50 flex items-center"
                                   >
                                     {/* Chấm tròn nhỏ */}
                                     <div className="w-1 h-1 rounded-full bg-gray-400 mr-2"></div>
                                     {area.name}
-                                  </a>
+                                  </Link>
                                 ))}
                               </Disclosure.Panel>
                             )}
