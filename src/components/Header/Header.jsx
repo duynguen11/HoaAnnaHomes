@@ -76,9 +76,9 @@ const products = [
 
 const productmobile = [
   { name: "QUẬN 1", href: "/realestateQ1" },
-  { name: "BÌNH THẠNH", href: "/about" },
-  { name: "THỦ THIÊM", href: "/about" },
-  { name: "QUẬN 2", href: "/about" },
+  { name: "BÌNH THẠNH", href: "/realestateBT" },
+  { name: "THỦ THIÊM", href: "/realestateTT" },
+  { name: "QUẬN 2", href: "#" },
 ];
 
 const markets = [
@@ -298,13 +298,14 @@ export default function Example() {
                     {openSubmenu === item.name && item.submenu.length > 0 && (
                       <div className="ml-14 my-1 rounded bg-gray-50 p-2 shadow-inner">
                         {item.submenu.map((subItem, index) => (
-                          <a
+                          <Link
                             key={index}
-                            href={subItem.url} // Dùng URL từ submenu
+                            as="a"
+                            to={subItem.url} // Dùng URL từ submenu
                             className="block rounded px-4 py-2 text-xs font-semibold text-gray-500 hover:bg-gray-200"
                           >
                             {subItem.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     )}
