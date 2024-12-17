@@ -1,57 +1,80 @@
-import MetropoleImg from "../../assets/images/RealestateTT/Metropole.jpg";
-import TheRiverImg from "../../assets/images/RealestateTT/TheRiver.jpg";
-import TheZietImg from "../../assets/images/RealestateTT/TheZeit.jpg";
-import SalaImg from "../../assets/images/RealestateTT/Sala.jpg";
+import DedgeImg from "../../assets/images/RealestateQ2/D'Edge.jpg";
+import GreenImg from "../../assets/images/RealestateQ2/TĐGreen.jpg";
+import NassimImg from "../../assets/images/RealestateQ2/Nassim.jpg";
+import Q2Img from "../../assets/images/RealestateQ2/Q2.jpg";
+import DiamondImg from "../../assets/images/RealestateQ2/DiamondIsland.jpg";
+import FelizImg from "../../assets/images/RealestateQ2/FelizEnVista.jpg";
+import DefineImg from "../../assets/images/RealestateQ2/Define.jpg";
 
-const RealestateTT = () => {
+const RealestateQ2 = () => {
   const cardData = [
     {
-      imageUrl: MetropoleImg,
-      propertyCount: "Hiện có 194 bất động sản",
-      priceRange: "29.1 - 130 triệu/ tháng",
-      title: "The Metropole",
-      description: "Đang bán giai đoạn 4 - The OpusK",
+      imageUrl: DedgeImg,
+      propertyCount: "Hiện có 20 bất động sản",
+      priceRange: "33 - 180.2 triệu/ tháng",
+      title: "D'Edge",
+      description: "Đã bàn giao",
+      author: "CapitalLand Development VN",
+      role: "Co-Founder / CTO",
+      detailUrl: "#",
+    },
+    {
+      imageUrl: GreenImg,
+      propertyCount: "Hiện có 20 bất động sản",
+      priceRange: "25.8 - 45.3 triệu/ tháng",
+      title: "Thảo Điền Green",
+      description: "Bàn giao ngày 2/8/2023",
+      author: "Công ty đầu tư BĐS SIC",
+      role: "Co-Founder / CTO",
+      detailUrl: "#",
+    },
+    {
+      imageUrl: NassimImg,
+      propertyCount: "Hiện có 20 bất động sản",
+      priceRange: "26 - 107.3 triệu/ tháng",
+      title: "Nassim Thảo Điền",
+      description: "Đang mở bán",
       author: "Công ty CP BĐS Sơn Kim Land",
       role: "Co-Founder / CTO",
       detailUrl: "#",
     },
     {
-      imageUrl: "https://via.placeholder.com/600x400",
-      propertyCount: "",
-      priceRange: "",
-      title: "The Emprie City",
-      description: "Đang mở bán",
-      author: "",
+      imageUrl: Q2Img,
+      propertyCount: "Hiện có 20 bất động sản",
+      priceRange: "20.5 - 58.2 triệu/ tháng",
+      title: "Q2 Thảo Điền",
+      description: "Bàn giao năm 2021",
+      author: "Đang cập nhật ...",
       role: "Co-Founder / CTO",
       detailUrl: "#",
     },
     {
-      imageUrl: TheRiverImg,
-      propertyCount: "Hiện có 54 bất động sản",
-      priceRange: "24 - 100 triệu/ tháng",
-      title: "The River",
+      imageUrl: DiamondImg,
+      propertyCount: "Hiện có 63 bất động sản",
+      priceRange: "18 - 86.7 triệu/ tháng",
+      title: "Diamond Island",
       description: "Đã bàn giao",
-      author: "Công ty cổ phần phát triển BĐS Refico",
+      author: "Kusto Home",
       role: "Co-Founder / CTO",
       detailUrl: "#",
     },
     {
-      imageUrl: TheZietImg,
-      propertyCount: "Hiện có 35 bất động sản",
-      priceRange: "18 - 61.5 triệu/ tháng",
-      title: "The Ziet River",
-      description: "23/7/2023 mở bán tiếp GĐ2",
-      author: "Công ty GS Engineering & Construction",
+      imageUrl: FelizImg,
+      propertyCount: "Hiện có 71 bất động sản",
+      priceRange: "18.5 - 85 triệu/ tháng",
+      title: "Feliz En Vista",
+      description: "Đã bàn giao",
+      author: "CapitalLand Development VN",
       role: "Co-Founder / CTO",
       detailUrl: "#",
     },
     {
-      imageUrl: SalaImg,
-      propertyCount: "Hiện có 60 bất động sản",
-      priceRange: "26 - 61.5 triệu/ tháng",
-      title: "Khu đô thị Sala",
-      description: "Đang mở bán",
-      author: "Công ty CP Đầu tư địa ốc",
+      imageUrl: DefineImg,
+      propertyCount: "Hiện có 20 bất động sản",
+      priceRange: "60 - 126.8 triệu/ tháng",
+      title: "Căn hộ DEFINE",
+      description: "Sắp bàn giao",
+      author: "CapitalLand Development VN",
       role: "Co-Founder / CTO",
       detailUrl: "#",
     },
@@ -60,7 +83,7 @@ const RealestateTT = () => {
     <div className="p-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-blue-900 mb-6">
-          Căn hộ cho thuê khu vực Thủ Thiêm
+          Căn hộ cho thuê khu vực Quận 2
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {cardData.map((card, index) => (
@@ -119,4 +142,4 @@ const RealestateTT = () => {
   );
 };
 
-export default RealestateTT;
+export default RealestateQ2;

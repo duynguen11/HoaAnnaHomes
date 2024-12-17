@@ -45,7 +45,7 @@ const products = [
       { name: "QUẬN 1", url: "/realestateQ1" },
       { name: "BÌNH THẠNH", url: "/realestateBT" },
       { name: "THỦ THIÊM", url: "/realestateTT" },
-      { name: "QUẬN 2", url: "/apartments/district-2" },
+      { name: "QUẬN 2", url: "/realestateQ2" },
     ],
   },
   {
@@ -78,7 +78,7 @@ const productmobile = [
   { name: "QUẬN 1", href: "/realestateQ1" },
   { name: "BÌNH THẠNH", href: "/realestateBT" },
   { name: "THỦ THIÊM", href: "/realestateTT" },
-  { name: "QUẬN 2", href: "#" },
+  { name: "QUẬN 2", href: "/realestateQ2" },
 ];
 
 const markets = [

@@ -66,7 +66,7 @@ const RealestateBT = () => {
               />
 
               {/* Content Section */}
-              <div className="p-6">
+              <div className="p-4">
                 {/* Date and Tag */}
                 <div className="flex items-center text-sm text-gray-500 mb-2">
                   <span>{card.propertyCount}</span>
@@ -76,12 +76,12 @@ const RealestateBT = () => {
                 </div>
 
                 {/* Title */}
-                <h2 className="text-lg font-semibold text-gray-900 hover:text-blue-600 cursor-pointer mb-2">
+                <h2 className="text-lg font-semibold text-gray-900 hover:text-blue-600 cursor-pointer">
                   {card.title}
                 </h2>
 
                 {/* Description */}
-                <p className="text-sm text-gray-600 mb-4">{card.description}</p>
+                <p className="text-sm text-gray-600 mb-3">{card.description}</p>
 
                 {/* Author Section */}
                 <div className="flex items-center justify-between">
@@ -95,9 +95,9 @@ const RealestateBT = () => {
                   {/* Nút xem chi tiết */}
                   <a
                     href={card.detailUrl}
-                    className="ml-auto inline-block rounded bg-red-500 px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 transition-colors"
+                    className="ml-auto inline-block rounded bg-red-500 p-2 text-sm font-semibold text-white hover:bg-red-700 transition-colors"
                   >
-                    Xem chi tiết dự án
+                    Thông tin dự án
                   </a>
                 </div>
               </div>

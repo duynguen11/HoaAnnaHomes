@@ -15,7 +15,7 @@ const navigation = [
   { name: "QUẬN 1", href: "/realestateQ1", current: false },
   { name: "BÌNH THẠNH", href: "/realestateBT", current: false },
   { name: "THỦ THIÊM ", href: "/realestateTT", current: false },
-  { name: "QUẬN 2", href: "#", current: false },
+  { name: "QUẬN 2", href: "/realestateQ2", current: false },
 ];
 
 function classNames(...classes) {
