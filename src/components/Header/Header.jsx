@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -23,7 +22,13 @@ import {
 } from "@heroicons/react/24/outline";
 
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
+import {
+  HomeIcon,
+  BuildingOfficeIcon,
+  KeyIcon,
+  MapIcon,
+  BuildingStorefrontIcon,
+} from "@heroicons/react/24/outline";
 import {
   FaTiktok,
   FaInstagram,
@@ -31,7 +36,6 @@ import {
   FaFacebook,
   FaLinkedin,
 } from "react-icons/fa";
-import { HomeIcon } from "@heroicons/react/24/outline";
 import IquiLogo from "../../assets/images/IQUI-logo.png";
 import "./Header.css";
 
@@ -51,26 +55,38 @@ const products = [
   {
     name: "CĂN HỘ CHUYỂN NHƯỢNG",
     description: "Speak directly to your customers",
-    href: "#",
-    icon: CursorArrowRaysIcon,
+    icon: BuildingOfficeIcon,
+    submenu: [
+      { name: "SUNWAH", url: "#" },
+      { name: "DIAMOND ISLAND", url: "#" },
+      { name: "METROPOLE", url: "#" },
+      { name: "PEARL PLAZA", url: "#" },
+    ],
   },
   {
     name: "CĂN HỘ DỰ ÁN MỚI",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
-    icon: FingerPrintIcon,
+    icon: KeyIcon,
+    submenu: [
+      { name: "EATON PARK", url: "#" },
+      { name: "GRAND MARINA", url: "#" },
+      { name: "GLOBAL CITY", url: "#" },
+      { name: "THE OPUSK - METROPOLE", url: "#" },
+      { name: "LANDCASTER", url: "#" },
+      { name: "THẢO ĐIỀN GREEN", url: "#" },
+    ],
   },
   {
     name: "VĂN PHÒNG CHO THUÊ",
     description: "Connect with third-party tools",
-    href: "#",
-    icon: SquaresPlusIcon,
+    icon: MapIcon,
+    submenu: [{ name: "CREST METROPOLE", url: "#" }],
   },
   {
     name: "NHÀ PHỐ - VILLA",
     description: "Build strategic funnels that will convert",
-    href: "#",
-    icon: ArrowPathIcon,
+    icon: BuildingStorefrontIcon,
+    submenu: [{ name: "VILLA THẢO ĐIỀN CHO THUÊ", url: "#" }],
   },
 ];
 
@@ -113,9 +129,9 @@ const news = [
 
 export default function Example() {
   const [isFixed, setIsFixed] = useState(false);
-  const [isAreaOpen, setIsAreaOpen] = useState(false); // Trạng thái mở/đóng cho "CĂN HỘ CHO THUÊ"
-  const [isProjectOpen, setIsProjectOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(null); // Trạng thái mở/đóng cho "CĂN HỘ CHO THUÊ"
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [isProjectOpen, setIsProjectOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -133,16 +149,20 @@ export default function Example() {
     };
   }, []);
 
+  const toggleMenu = (name) => {
+    setOpenMenu(openMenu === name ? null : name);
+  };
+
   const toggleSubmenu = (name) => {
     setOpenSubmenu(openSubmenu === name ? null : name);
   };
 
   useEffect(() => {
-    // Khi "DỰ ÁN" đóng, reset trạng thái "CĂN HỘ CHO THUÊ" về đóng
-    if (!isProjectOpen) {
-      setIsAreaOpen(false);
+    // Reset submenu khi "DỰ ÁN" hoặc menu con đóng
+    if (!isProjectOpen || openMenu === null) {
+      setOpenMenu(null);
     }
-  }, [isProjectOpen]);
+  }, [isProjectOpen, openMenu]);
 
   return (
     <header className="header bg-white">
@@ -279,14 +299,12 @@ export default function Example() {
                       <div>
                         <p className="flex items-center text-xs font-semibold text-gray-500">
                           {item.name}
-                          {item.name === "CĂN HỘ CHO THUÊ" && (
-                            <ChevronDownIcon
-                              aria-hidden="true"
-                              className={`ml-1 size-3 text-gray-600 transition-transform ${
-                                openSubmenu === item.name ? "rotate-180" : ""
-                              }`}
-                            />
-                          )}
+                          <ChevronDownIcon
+                            aria-hidden="true"
+                            className={`ml-1 size-3 text-gray-600 transition-transform ${
+                              openSubmenu === item.name ? "rotate-180" : ""
+                            }`}
+                          />
                         </p>
                         <p className="text-xs text-gray-500">
                           {item.description}
@@ -300,8 +318,7 @@ export default function Example() {
                         {item.submenu.map((subItem, index) => (
                           <Link
                             key={index}
-                            as="a"
-                            to={subItem.url} // Dùng URL từ submenu
+                            to={subItem.url} // URL từ submenu
                             className="block rounded px-4 py-2 text-xs font-semibold text-gray-500 hover:bg-gray-200"
                           >
                             {subItem.name}
@@ -462,50 +479,46 @@ export default function Example() {
                   </Disclosure.Button>
 
                   <Disclosure.Panel className="mt-2 space-y-2">
-                    {products.map((item, index) => (
-                      <div key={item.name}>
-                        {/* Nếu là phần tử đầu tiên và có tên "CĂN HỘ CHO THUÊ", hiển thị Disclosure */}
-                        {index === 0 && item.name === "CĂN HỘ CHO THUÊ" ? (
-                          <Disclosure>
-                            <Disclosure.Button
-                              className="group flex w-full items-center justify-between rounded-lg p-3 pl-6 pr-3.5 text-[14px] text-gray-600 hover:bg-gray-50"
-                              onClick={() => setIsAreaOpen(!isAreaOpen)} // Toggle trạng thái khi click vào "CĂN HỘ CHO THUÊ"
-                            >
-                              CĂN HỘ CHO THUÊ
-                              <ChevronDownIcon
-                                aria-hidden="true"
-                                className={`size-5 flex-none transition-transform ${
-                                  isAreaOpen ? "rotate-180" : ""
-                                }`} // Xoay icon khi mở/đóng
-                              />
-                            </Disclosure.Button>
+                    {products.map((item) => (
+                      <div key={item.name} className="border-b border-gray-200">
+                        <Disclosure>
+                          {({ open }) => (
+                            <>
+                              {/* Nút chính */}
+                              <Disclosure.Button
+                                onClick={() => toggleMenu(item.name)}
+                                className="flex w-full items-center justify-between p-3 pl-5 pr-4 text-[14px] font-medium text-gray-700 hover:bg-gray-50"
+                              >
+                                <div className="flex items-center gap-x-2">
+                                  {item.name}
+                                </div>
+                                <ChevronDownIcon
+                                  aria-hidden="true"
+                                  className={`size-5 transition-transform ${
+                                    openMenu === item.name ? "rotate-180" : ""
+                                  }`}
+                                />
+                              </Disclosure.Button>
 
-                            {isAreaOpen && (
-                              <Disclosure.Panel className="mt-2 space-y-2 pl-6">
-                                {productmobile.map((area) => (
-                                  <Link
-                                    key={area.name}
-                                    to={area.href}
-                                    className="block rounded py-3 pl-6 pr-3 text-sm text-gray-600 hover:bg-gray-50 flex items-center"
-                                  >
-                                    {/* Chấm tròn nhỏ */}
-                                    <div className="w-1 h-1 rounded-full bg-gray-400 mr-2"></div>
-                                    {area.name}
-                                  </Link>
-                                ))}
-                              </Disclosure.Panel>
-                            )}
-                          </Disclosure>
-                        ) : (
-                          // Các phần tử còn lại sẽ hiển thị như bình thường
-                          <Disclosure.Button
-                            as="a"
-                            href={item.href}
-                            className="block rounded py-3 pl-6 pr-3 text-sm text-gray-600 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        )}
+                              {/* Submenu */}
+                              {openMenu === item.name && (
+                                <Disclosure.Panel className="space-y-1 py-2 bg-gray-50">
+                                  {item.submenu.map((subItem, index) => (
+                                    <Link
+                                      key={index}
+                                      to={subItem.url}
+                                      className="block rounded py-2 pl-5 pr-4 text-sm text-gray-600 hover:bg-gray-200"
+                                    >
+                                      {/* Chấm tròn nhỏ */}
+                                      <div className="inline-block w-1 h-1 rounded-full bg-gray-400 mr-2"></div>
+                                      {subItem.name}
+                                    </Link>
+                                  ))}
+                                </Disclosure.Panel>
+                              )}
+                            </>
+                          )}
+                        </Disclosure>
                       </div>
                     ))}
                   </Disclosure.Panel>
