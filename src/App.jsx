@@ -5,6 +5,7 @@ import RealestatePageQ1 from "./pages/RealestatePageQ1";
 import RealestatePageBT from "./pages/RealestatePageBT";
 import RealestatePageTT from "./pages/RealestatePageTT";
 import RealestatePageQ2 from "./pages/RealestatePageQ2";
+import EatonParkPage from "./pages/EatonParkPage";
 import AboutPage from "./pages/AboutPage";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/realestateBT" element={<RealestatePageBT />} />
         <Route path="/realestateTT" element={<RealestatePageTT />} />
         <Route path="/realestateQ2" element={<RealestatePageQ2 />} />
+        <Route path="/EatonPark" element={<EatonParkPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>

@@ -68,7 +68,7 @@ const products = [
     description: "Your customers’ data will be safe and secure",
     icon: KeyIcon,
     submenu: [
-      { name: "EATON PARK", url: "#" },
+      { name: "EATON PARK", url: "/EatonPark" },
       { name: "GRAND MARINA", url: "#" },
       { name: "GLOBAL CITY", url: "#" },
       { name: "THE OPUSK - METROPOLE", url: "#" },
@@ -150,19 +150,27 @@ export default function Example() {
   }, []);
 
   const toggleMenu = (name) => {
-    setOpenMenu(openMenu === name ? null : name);
+    // Đóng tất cả các menu và submenu nếu menu chính khác được chọn
+    if (openMenu !== name) {
+      setOpenMenu(name);
+      setOpenSubmenu(null); // Đóng các submenu khi chuyển menu chính
+    } else {
+      setOpenMenu(null); // Đóng menu chính nếu đã mở
+      setOpenSubmenu(null); // Đóng submenu liên quan
+    }
   };
 
   const toggleSubmenu = (name) => {
+    // Chỉ mở submenu được chọn và giữ menu chính hiện tại
     setOpenSubmenu(openSubmenu === name ? null : name);
   };
 
   useEffect(() => {
-    // Reset submenu khi "DỰ ÁN" hoặc menu con đóng
-    if (!isProjectOpen || openMenu === null) {
-      setOpenMenu(null);
+    // Reset submenu khi menu chính đóng
+    if (openMenu === null) {
+      setOpenSubmenu(null);
     }
-  }, [isProjectOpen, openMenu]);
+  }, [openMenu]);
 
   return (
     <header className="header bg-white">
@@ -482,42 +490,38 @@ export default function Example() {
                     {products.map((item) => (
                       <div key={item.name} className="border-b border-gray-200">
                         <Disclosure>
-                          {({ open }) => (
-                            <>
-                              {/* Nút chính */}
-                              <Disclosure.Button
-                                onClick={() => toggleMenu(item.name)}
-                                className="flex w-full items-center justify-between p-3 pl-5 pr-4 text-[14px] font-medium text-gray-700 hover:bg-gray-50"
-                              >
-                                <div className="flex items-center gap-x-2">
-                                  {item.name}
-                                </div>
-                                <ChevronDownIcon
-                                  aria-hidden="true"
-                                  className={`size-5 transition-transform ${
-                                    openMenu === item.name ? "rotate-180" : ""
-                                  }`}
-                                />
-                              </Disclosure.Button>
+                          <>
+                            {/* Nút chính */}
+                            <Disclosure.Button
+                              onClick={() => toggleMenu(item.name)}
+                              className="flex w-full items-center justify-between p-3 pl-5 pr-4 text-[14px] font-medium text-gray-700 hover:bg-gray-50"
+                            >
+                              <div className="flex items-center gap-x-2">
+                                {item.name}
+                              </div>
+                              <ChevronDownIcon
+                                aria-hidden="true"
+                                className={`size-5 transition-transform ${
+                                  openMenu === item.name ? "rotate-180" : ""
+                                }`}
+                              />
+                            </Disclosure.Button>
 
-                              {/* Submenu */}
-                              {openMenu === item.name && (
-                                <Disclosure.Panel className="space-y-1 py-2 bg-gray-50">
-                                  {item.submenu.map((subItem, index) => (
-                                    <Link
-                                      key={index}
-                                      to={subItem.url}
-                                      className="block rounded py-2 pl-5 pr-4 text-sm text-gray-600 hover:bg-gray-200"
-                                    >
-                                      {/* Chấm tròn nhỏ */}
-                                      <div className="inline-block w-1 h-1 rounded-full bg-gray-400 mr-2"></div>
-                                      {subItem.name}
-                                    </Link>
-                                  ))}
-                                </Disclosure.Panel>
-                              )}
-                            </>
-                          )}
+                            {/* Submenu */}
+                            <Disclosure.Panel className="space-y-1 py-2 bg-gray-50">
+                              {item.submenu.map((subItem, index) => (
+                                <Link
+                                  key={index}
+                                  to={subItem.url}
+                                  className="block rounded py-2 pl-5 pr-4 text-sm text-gray-600 hover:bg-gray-200"
+                                >
+                                  {/* Chấm tròn nhỏ */}
+                                  <div className="inline-block w-1 h-1 rounded-full bg-gray-400 mr-2"></div>
+                                  {subItem.name}
+                                </Link>
+                              ))}
+                            </Disclosure.Panel>
+                          </>
                         </Disclosure>
                       </div>
                     ))}
