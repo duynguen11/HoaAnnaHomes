@@ -56,15 +56,12 @@ const SlideSection = () => {
             className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
               index === currentIndex ? "translate-x-0" : "translate-x-full"
             }`}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundSize: "cover", // Ensures the image covers the entire area
-              backgroundPosition: "center", // Centers the image
-              backgroundRepeat: "no-repeat", // Prevents tiling
-              width: "100%", // Set width to 100% of the parent container
-              height: "100%", // Adjust height as needed
-            }}
           >
+            <img
+              src={slide.image}
+              alt={slide.content}
+              className="w-full h-full object-contain" // Đảm bảo ảnh hiển thị đầy đủ
+            />
             {/* Overlay thông tin */}
             <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded-lg">
               <h2 className="text-lg md:text-2xl lg:text-4xl font-bold">

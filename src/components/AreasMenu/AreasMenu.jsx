@@ -28,7 +28,7 @@ export default function AreasMenu() {
       <div className="mx-auto max-w-7xl">
         <Disclosure as="nav" className="bg-gray-50">
           <div className="px-8 sm:px-6 lg:px-8">
-            <div className="flex py-1 items-center justify-between">
+            <div className="flex py-2 items-center justify-between">
               <div className="flex items-center">
                 <div className="hidden md:block">
                   <div className="flex items-baseline space-x-4">
@@ -72,7 +72,7 @@ export default function AreasMenu() {
               </div>
               <div className="-mr-2 flex md:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="group relative inline-flex items-center justify-center rounded  p-1 text-gray-400 hover:bg-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded p-2 text-gray-400 hover:bg-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                   <span className="absolute -inset-0.5" />
                   <span className="text-sm font-semibold text-gray-500 mr-2">
                     CHỌN KHU VỰC DỰ ÁN
@@ -91,7 +91,7 @@ export default function AreasMenu() {
           </div>
 
           <DisclosurePanel className="">
-            <div className="space-y-1 px-6 pb-3 pt-2">
+            <div className="space-y-2 px-3 pb-3 pt-2">
               {navigation.map((item) => (
                 <Link
                   key={item.name}

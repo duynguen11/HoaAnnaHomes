@@ -29,20 +29,17 @@ const IntroSection = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto py-6">
-        <img className="rounded" src={""} alt="" />
-      </div>
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="pt-4 text-3xl font-bold text-blue-900 mb-6">
           Giới thiệu Dịch Vụ Bất Động Sản Hoà Anna Homes
         </h2>
-        <p className="text-sm text-gray-600 mb-12">
+        <p className="text-sm text-gray-600 mb-10">
           Tại HoaAnna & Homes, chúng tôi mang đến các dịch vụ bất động sản
           chuyên nghiệp, đáp ứng mọi nhu cầu của khách hàng:
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow">
             <h3 className="text-xl font-semibold mb-4">
               Dịch Vụ Mua Bán Và Chuyển Nhượng
             </h3>
@@ -53,7 +50,7 @@ const IntroSection = () => {
               tư.
             </p>
           </div>
-          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow-lg">
+          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow">
             <h3 className="text-xl font-semibold mb-4">
               {" "}
               Dịch Vụ Cho Thuê Và Quản Lý Tài Sản
@@ -64,7 +61,7 @@ const IntroSection = () => {
               chuyên nghiệp, giúp khai thác tối ưu giá trị bất động sản.
             </p>
           </div>
-          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow-lg">
+          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow">
             <h3 className="text-xl font-semibold mb-4">
               Tư Vấn Giải Pháp Tài Chính
             </h3>
@@ -75,7 +72,7 @@ const IntroSection = () => {
               động sản.
             </p>
           </div>
-          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow-lg">
+          <div className="bg-blue-900 text-white px-6 py-8 rounded shadow">
             <h3 className="text-xl font-semibold mb-4">
               Xây Dựng Mối Quan Hệ Và Đội Ngũ Chuyên Nghiệp
             </h3>

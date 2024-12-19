@@ -467,7 +467,7 @@ export default function Example() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-3 text-gray-700"
+              className="-m-2.5 rounded-md p-3 bg-gray-100 text-gray-700"
             >
               <span className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
@@ -593,10 +593,10 @@ export default function Example() {
                 </Link>
               </div>
               <div className="py-6">
-                <p className="-mx-3 block rounded-lg p-3 text-[14px] font-semibold text-blue-500">
+                <p className="-mx-3 block rounded-lg p-3 text-[16px] font-semibold text-blue-500">
                   Hotline: +84 906 821 738
                 </p>
-                <p className="-mx-3 block rounded-lg p-3 text-[14px] font-semibold text-blue-500 tracking-wider">
+                <p className="-mx-3 block rounded-lg p-3 text-[16px] font-semibold text-blue-500 tracking-wider">
                   Email: hoaanna.realtor@gmail.com
                 </p>
               </div>
