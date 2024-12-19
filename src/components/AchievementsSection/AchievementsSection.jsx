@@ -2,7 +2,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 const AchievementsSection = () => {
   return (
-    <div className="p-6">
+    <div className="p-3">
       <div className="max-w-7xl mx-auto py-8">
         <h2 className="pt-6 text-3xl text-center font-bold text-blue-900 mb-6">
           Thành tựu và Hoạt động của Hoà Anna Homes

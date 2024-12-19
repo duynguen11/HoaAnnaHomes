@@ -44,7 +44,7 @@ const SlideSection = () => {
   }, [slides.length, isPaused]);
 
   return (
-    <div className="p-6">
+    <div className="p-3">
       <div
         className="max-w-7xl w-full mx-auto h-[50vh] md:h-[60vh] lg:h-[75vh] rounded relative overflow-hidden"
         onMouseEnter={() => setIsPaused(true)} // Tạm dừng khi hover

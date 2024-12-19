@@ -49,7 +49,7 @@ const FeedbackSection = () => {
   ];
 
   return (
-    <div className="max-w mx-auto px-6 py-12 bg-gray-50">
+    <div className="max-w mx-auto px-3 py-12 bg-gray-50">
       <h2 className="text-center text-3xl font-bold text-blue-900 mb-6">
         Đánh giá từ Khách hàng và Đối tác của Hoà Anna Homes
       </h2>

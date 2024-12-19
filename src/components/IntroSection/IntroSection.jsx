@@ -1,6 +1,6 @@
 const IntroSection = () => {
   return (
-    <div className="p-6">
+    <div className="p-3">
       <div className="max-w-7xl mx-auto py-8 flex items-center justify-center gap-x-3 flex flex-col sm:flex-row lg:flex-row">
         <div className="w-full">
           <h2 className="w-full mb-6 text-3xl font-bold text-blue-900">

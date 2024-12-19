@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="p-6">
+    <footer className="p-3">
       <div className="max-w-7xl mx-auto py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
         {/* Cột Tiffany & Homes */}
         <div>

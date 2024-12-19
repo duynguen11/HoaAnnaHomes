@@ -49,7 +49,7 @@ const MarketsSection = () => {
   ];
 
   return (
-    <div className="max-w mx-auto p-6 pt-12 bg-gray-50">
+    <div className="max-w mx-auto p-3 pt-12 bg-gray-50">
       <h2 className="text-center text-3xl font-bold text-blue-900 mb-6">
         Cập nhật của Hòa Anna Homes về thị trường
       </h2>

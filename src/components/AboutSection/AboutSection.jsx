@@ -4,7 +4,7 @@ import BgAbout from "../../assets/images/Bg-about.jpg";
 const AboutSection = () => {
   return (
     <>
-      <div className="p-6">
+      <div className="p-3">
         <div className="max-w-7xl mx-auto">
           <img src={Bg1} alt="BgAbout" className="rounded" />
           <div>
