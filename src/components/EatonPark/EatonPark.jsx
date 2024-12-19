@@ -160,7 +160,7 @@ const EatonPark = () => {
   }, [slides.length, isPaused]);
 
   return (
-    <div className="p-6">
+    <div className="py-6 px-2">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xl font-bold text-blue-900 my-6">
           Thông tin dự án Eaton Park ở 94A Mai Chí Thọ, Phường An Phú, Thành phố
