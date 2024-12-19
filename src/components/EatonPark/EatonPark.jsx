@@ -257,7 +257,7 @@ const EatonPark = () => {
   }, [slides.length, isPaused]);
 
   return (
-    <div className="py-6 px-2">
+    <div className="py-6 px-3">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xl font-bold text-blue-900 my-6">
           Thông tin dự án Eaton Park ở 94A Mai Chí Thọ, Phường An Phú, Thành phố
@@ -325,19 +325,20 @@ const EatonPark = () => {
                 <ChevronRightIcon className="w-5 h-5" />
               </button>
             </div>
-            <div className="flex justify-between items-center mt-3">
+            <div className="flex justify-between items-center my-3">
               <h2 className="text-xl font-bold text-blue-900">
                 5,80 tỷ - 89 tỷ
               </h2>
               <p className="text-sm font-bold text-gray-700">CĂN HỘ</p>
             </div>
+            <hr />
             <div>
-              <p className="text-sm text-gray-600 my-3">
+              <p className="text-sm text-gray-600 my-5">
                 Dự án Eaton Park là một dự án siêu phẩm thành phố Thủ Đức tại
                 trái tim của Sài Gòn. Nơi phát triển mạnh mẽ nhất lúc này. Một
                 dự án có căn hộ cao cấp với quy mô 3.68 hecta.
               </p>
-              <p className="text-sm text-gray-600 my-3">
+              <p className="text-sm text-gray-600">
                 Eaton Park là dự án Căn hộ chung cư cao cấp, được phát triển bởi
                 tập đoàn Gamuda Land. Tọa lạc tại vị trí mặt tiền Mai Chí Thọ,
                 Phường An Phú, Eaton Park là thừa hưởng sự kết nối đắc địa vào
@@ -347,14 +348,14 @@ const EatonPark = () => {
               </p>
             </div>
           </div>
-          <div className="bg-gray-50 p-6 rounded">
-            <div className="flex items-center gap-4 mb-6">
+          <div className="bg-gray-50 p-4 rounded">
+            <div className="flex flex-col items-center justify-center text-center gap-2 mb-6">
               <img
                 src={AvatarHoa}
                 alt="Avatar"
                 className="w-20 h-20 rounded-full object-cover"
               />
-              <h2 className="text-xl font-semibold text-blue-900">
+              <h2 className="text-2xl font-semibold text-blue-900">
                 Hòa Anna Homes
               </h2>
             </div>
@@ -382,8 +383,8 @@ const EatonPark = () => {
                 rows="3"
               ></textarea>
               {/* Checkbox */}
-              <div className="flex items-center gap-2 text-sm pt-3">
-                <input type="checkbox" id="agree" className="rounded" />
+              <div className="flex items-center gap-2 text-sm pb-5">
+                <input type="checkbox" id="agree" className="rounded w-4 h-4" />
                 <label htmlFor="agree">
                   Đồng ý với{" "}
                   <a href="#" className="text-blue-600 underline">
@@ -394,10 +395,10 @@ const EatonPark = () => {
 
               {/* Buttons */}
               <div className="flex gap-4">
-                <button className="p-2 bg-blue-100 text-sm text-blue-600 rounded-full">
+                <button className="flex-1 py-2 px-3 bg-blue-100 text-sm text-blue-600 rounded-full">
                   Gọi ngay
                 </button>
-                <button className="p-2 bg-blue-600 text-sm text-white rounded-full">
+                <button className="flex-1 py-2 px-3 bg-blue-600 text-sm text-white rounded-full">
                   Gửi thông tin
                 </button>
               </div>
@@ -405,7 +406,7 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="rounded mt-10 p-3">
+          <div className="rounded mt-10">
             <h2 className="text-xl font-bold text-gray-800 mb-3">
               Tổng quan dự án
             </h2>
@@ -612,7 +613,9 @@ const EatonPark = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
           <div className="rounded py-6">
-            <h2 className="text-xl font-bold text-gray-800 ml-3">Vị trí mặt bằng</h2>
+            <h2 className="text-xl font-bold text-gray-800 ml-2">
+              Vị trí mặt bằng
+            </h2>
             <div
               className="w-full mx-auto rounded relative overflow-hidden h-[50vh] md:h-[55vh] lg:h-[70vh] py-4"
               onMouseEnter={() => setIsPaused(true)} // Tạm dừng khi hover
@@ -661,7 +664,7 @@ const EatonPark = () => {
               {areas2.map((item, index) => (
                 <div key={item.id} className="mb-3">
                   <h2
-                    className="text-l cursor-pointer hover:bg-gray-50 flex items-center p-2 rounded"
+                    className="text-sm cursor-pointer hover:bg-gray-50 flex items-center p-2 rounded"
                     onClick={() => toggleImage(index)} // Khi click vào h2, gọi hàm toggle cho mục tương ứng
                   >
                     {item.content}
@@ -688,43 +691,43 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="bg-gray-50 rounded p-6">
+          <div className="bg-gray-50 rounded p-4">
             <h2 className="text-xl font-bold text-gray-800 mb-3">Tiện ích</h2>
             <hr className="mb-6" />
             <div className="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0">
               <div className="flex-1">
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Hồ bơi tiêu chuẩn hạng sang
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Khu chiêm nghưỡng phong cảnh
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Khu vui chơi trẻ em</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Sân cỏ đi bộ</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Khu BBQ</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Khu đọc sách ngoài trời
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Khu chiếu phim ngoài trời
                   </p>
@@ -732,67 +735,67 @@ const EatonPark = () => {
               </div>
               <div className="flex-1">
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Khu tập thể dục ngoài trời
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Hồ bơi Trẻ em</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Hồ Jacuzzi</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Sảnh thiền và yoga</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Phòng Gym</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Đường chạy bộ trên cao
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Thư viện đọc sách</p>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
                     Khu bóng đá/Khu bóng rổ
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Suối nước phong thủy</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Khu thảo mộc</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Khu thực tế ảo</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Thác nước</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Vườn treo</p>
                 </div>
                 <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 text-gray-500" />
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">Khu sinh hoạt cư dân</p>
                 </div>
               </div>
@@ -809,7 +812,7 @@ const EatonPark = () => {
               {slides.map((slide) => (
                 <div
                   key={slide.id}
-                  className="w-full sm:w-1/2 lg:w-1/3 p-1 transition-transform transform hover:scale-105 cursor-pointer"
+                  className="w-full p-2 sm:w-1/2 lg:w-1/3 transition-transform transform hover:scale-105 cursor-pointer"
                   onClick={() => openModal(slide.image)} // Quy định số cột ở từng kích thước màn hình
                 >
                   <div
