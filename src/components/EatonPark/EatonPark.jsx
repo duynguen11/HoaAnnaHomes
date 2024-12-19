@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 
@@ -29,6 +31,8 @@ import Vitri8 from "../../assets/images/EatonPark/Vitri8.jpg";
 import Vitri9 from "../../assets/images/EatonPark/Vitri9.jpg";
 import Vitri10 from "../../assets/images/EatonPark/Vitri10.jpg";
 import Vitri11 from "../../assets/images/EatonPark/Vitri11.jpg";
+import Vitri12 from "../../assets/images/EatonPark/Vitri12.jpg";
+import Vitri13 from "../../assets/images/EatonPark/Vitri13.jpg";
 
 import AvatarHoa from "../../assets/images/EatonPark/AvatarHoa.png";
 import { CheckIcon } from "@heroicons/react/20/solid";
@@ -105,7 +109,7 @@ const EatonPark = () => {
     },
     {
       id: 2,
-      content: "Slide 2",
+      content: "",
       image: Vitri2,
     },
     {
@@ -154,11 +158,74 @@ const EatonPark = () => {
       image: Vitri11,
     },
   ];
+  const areas2 = [
+    {
+      id: 1,
+      content: "Mặt bằng tổng thể dự án",
+      image: Vitri2,
+    },
+    {
+      id: 2,
+      content: "Mặt bằng điển hình Toà A5",
+      image: Vitri3,
+    },
+    {
+      id: 3,
+      content: "Mặt bằng điển hình căn hộ 1PN",
+      image: Vitri4,
+    },
+    {
+      id: 4,
+      content: "Mặt bằng điển hình căn hộ 2PN",
+      image: Vitri5,
+    },
+    {
+      id: 5,
+      content: "Mặt bằng điển hình căn hộ 3PN",
+      image: Vitri6,
+    },
+    {
+      id: 6,
+      content: "Mặt bằng điển hình Toà A6",
+      image: Vitri7,
+    },
+    {
+      id: 7,
+      content: "Mặt bằng điển hình căn hộ 1PN",
+      image: Vitri8,
+    },
+    {
+      id: 8,
+      content: "Mặt bằng điển hình căn hộ 2PN",
+      image: Vitri9,
+    },
+    {
+      id: 9,
+      content: "Mặt bằng điển hình căn hộ 3PN",
+      image: Vitri10,
+    },
+    {
+      id: 10,
+      content: "Mặt bằng điển hình căn hộ Penthouse",
+      image: Vitri11,
+    },
+    {
+      id: 11,
+      content: "Mặt bằng điển hình căn hộ Penthouse",
+      image: Vitri12,
+    },
+    {
+      id: 12,
+      content: "Mặt bằng điển hình căn hộ Penthouse",
+      image: Vitri13,
+    },
+  ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Điều khiển mở modal
   const [modalImage, setModalImage] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Điều khiển mở modal
+  const [openItems, setOpenItems] = useState(Array(areas2.length).fill(false));
 
   // Mở modal và hiển thị ảnh
   const openModal = (image) => {
@@ -170,6 +237,12 @@ const EatonPark = () => {
   const closeModal = () => {
     setIsModalOpen(false); // Đóng modal
     setModalImage(null); // Xóa ảnh trong modal
+  };
+
+  const toggleImage = (index) => {
+    const updatedItems = [...openItems];
+    updatedItems[index] = !updatedItems[index]; // Chuyển đổi trạng thái của mục được click
+    setOpenItems(updatedItems); // Cập nhật state mới
   };
 
   useEffect(() => {
@@ -256,7 +329,22 @@ const EatonPark = () => {
               <h2 className="text-xl font-bold text-blue-900">
                 5,80 tỷ - 89 tỷ
               </h2>
-              <p className="text-sm text-gray-500">CĂN HỘ</p>
+              <p className="text-sm font-bold text-gray-700">CĂN HỘ</p>
+            </div>
+            <div>
+              <p className="text-sm text-gray-600 my-3">
+                Dự án Eaton Park là một dự án siêu phẩm thành phố Thủ Đức tại
+                trái tim của Sài Gòn. Nơi phát triển mạnh mẽ nhất lúc này. Một
+                dự án có căn hộ cao cấp với quy mô 3.68 hecta.
+              </p>
+              <p className="text-sm text-gray-600 my-3">
+                Eaton Park là dự án Căn hộ chung cư cao cấp, được phát triển bởi
+                tập đoàn Gamuda Land. Tọa lạc tại vị trí mặt tiền Mai Chí Thọ,
+                Phường An Phú, Eaton Park là thừa hưởng sự kết nối đắc địa vào
+                trung tâm TP. HCM và ra Khu đông TP. Thủ Đức, dự án hứa hẹn sẽ
+                đem lại sự tiện lợi và tiện ích trọn vẹn cho gia chủ về một cuộc
+                sống ấm áp, hiện đại và tiện nghi.
+              </p>
             </div>
           </div>
           <div className="bg-gray-50 p-6 rounded">
@@ -317,67 +405,216 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="bg-gray-50 rounded mt-10 p-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-3">Tổng quan</h2>
-            <hr className="mb-6" />
-            <div className="flex space-x-6">
-              {/* Cột bên trái */}
-              <div className="flex-1">
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Tên dự án
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Chủ đầu tư
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Diện tích đất
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Loại hình sản phẩm
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Số toà
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Chiều cao
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Tổng số sản phẩm
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Diện tích trung bình
-                </p>
-                <p className="text-sm font-semibold text-gray-700 mb-3">
-                  Năm bàn giao
-                </p>
-                <p className="text-sm font-semibold text-gray-700">
-                  Tiêu chuẩn bàn giao
-                </p>
-              </div>
-              {/* Cột bên phải */}
-              <div className="flex-1">
-                <p className="text-sm text-gray-700 mb-3">Eaton Park</p>
-                <p className="text-sm text-gray-700 mb-3">Gamuda Land</p>
-                <p className="text-sm text-gray-700 mb-3">3,76 hecta</p>
-                <p className="text-sm text-gray-700 mb-3">Căn hộ</p>
-                <p className="text-sm text-gray-700 mb-3">6</p>
-                <p className="text-sm text-gray-700 mb-3">39</p>
-                <p className="text-sm text-gray-700 mb-3">1968</p>
-                <p className="text-sm text-gray-700 mb-3">45 - 145 m2</p>
-                <p className="text-sm text-gray-700 mb-3">2026</p>
-                <p className="text-sm text-gray-700">Cơ bản</p>
-              </div>
+          <div className="rounded mt-10 p-3">
+            <h2 className="text-xl font-bold text-gray-800 mb-3">
+              Tổng quan dự án
+            </h2>
+            <div className="overflow-x-auto">
+              <table className="table-auto border-collapse border border-gray-300 w-full text-sm text-left">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="border border-gray-300 px-4 py-2 font-semibold text-gray-700">
+                      Thông tin
+                    </th>
+                    <th className="border border-gray-300 px-4 py-2 font-semibold text-gray-700">
+                      Chi tiết
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tên dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Eaton Park
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Vị trí dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      94A Mai Chí Thọ, Phường An Phú, Thành phố Thủ Đức (Quận 2
+                      cũ), TP.HCM
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Chủ đầu tư
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Gamuda Land
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Đơn vị phát triển dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tập đoàn Gamuda Land – Malaysia
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Đơn vị thi công
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Nhà thầu The Contractor Founteach
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Thiết kế kiến trúc
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Công Ty TNHH AG INGO
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Đơn vị Tư vấn thiết kế Dân dụng & Kết cấu (C&S)
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      TWAsia Consultants Co., Ltd
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Đơn vị Tư vấn thiết kế M&E
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Công Ty TNHH Tư Vấn Thiết Kế ASP
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Đơn vị thiết kế cảnh quan
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Công Ty TNHH LJ Group
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Quy mô dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      3,68 ha
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Mật độ xây dựng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">40%</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Dự án 2 Khối công trình
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Khu 1, Khu 2
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tổng số tháp căn hộ
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      6 tháp – A1, A2, A3, A4, A5, A6
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tổng số lượng sản phẩm
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      1.968 căn hộ, 12 căn penthouse & 51 căn Shop khối đế và 21
+                      căn shophouse
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Số tầng hầm
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">02 hầm</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Shophouse thương mại
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tầng 1-2 (17 căn)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Khối tháp cao
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      27 - 39 tầng
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Phân Khu 1 (K1)
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Gồm 4 tháp (A1, A2, A3, A4):
+                      <ul className="list-disc pl-5">
+                        <li>Tầng 1-2: 15 shophouse</li>
+                        <li>Tháp A1 (tòa): 38 tầng, 338 căn hộ (9 căn/tầng)</li>
+                        <li>
+                          Tháp A2 (tòa): 29 tầng, 276 căn hộ (10 căn/tầng)
+                        </li>
+                        <li>
+                          Tháp A3 (tòa): 29 tầng, 347 căn hộ (13 căn/tầng)
+                        </li>
+                        <li>Tháp A4 (tòa): 39 tầng, 347 căn hộ (9 căn/tầng)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Phân Khu 2 (K2)
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Gồm 2 tháp (A5, A6):
+                      <ul className="list-disc pl-5">
+                        <li>Tầng 1-2: 5 shophouse</li>
+                        <li>Tháp (tòa) A5: 39 tầng, 346 căn hộ (9 căn/tầng)</li>
+                        <li>Tháp (tòa) A6: 37 tầng, 326 căn hộ (9 căn/tầng)</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Dự kiến bàn giao
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Quý 4/2026
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Pháp lý dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Full pháp lý & Sổ hồng sở hữu lâu dài
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
           <div className="rounded py-6">
-            <h2 className="text-xl font-bold text-gray-800">
-              Vị trí mặt bằng
-            </h2>
+            <h2 className="text-xl font-bold text-gray-800 ml-3">Vị trí mặt bằng</h2>
             <div
-              className="w-full mx-auto rounded relative overflow-hidden h-[50vh] md:h-[55vh] lg:h-[70vh]"
+              className="w-full mx-auto rounded relative overflow-hidden h-[50vh] md:h-[55vh] lg:h-[70vh] py-4"
               onMouseEnter={() => setIsPaused(true)} // Tạm dừng khi hover
               onMouseLeave={() => setIsPaused(false)}
             >
@@ -419,6 +656,34 @@ const EatonPark = () => {
               >
                 <ChevronRightIcon className="w-5 h-5" />
               </button>
+            </div>
+            <div className="p-2">
+              {areas2.map((item, index) => (
+                <div key={item.id} className="mb-3">
+                  <h2
+                    className="text-l cursor-pointer hover:bg-gray-50 flex items-center p-2 rounded"
+                    onClick={() => toggleImage(index)} // Khi click vào h2, gọi hàm toggle cho mục tương ứng
+                  >
+                    {item.content}
+                    {/* Mũi tên sẽ xoay tùy thuộc vào trạng thái của item */}
+                    {openItems[index] ? (
+                      <ChevronUpIcon className="w-4 h-4 ml-2 transform transition-transform duration-300" />
+                    ) : (
+                      <ChevronDownIcon className="w-4 h-4 ml-2 transform transition-transform duration-300" />
+                    )}
+                  </h2>
+
+                  {/* Ảnh sẽ hiển thị khi trạng thái mở của mục tương ứng là true */}
+                  {openItems[index] && (
+                    <img
+                      src={item.image}
+                      alt={item.content}
+                      className="mt-4 w-full h-auto rounded transition-all duration-300"
+                    />
+                  )}
+                  <hr />
+                </div>
+              ))}
             </div>
           </div>
         </div>
