@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
 
 import EatonPark1 from "../../assets/images/EatonPark/EatonPark1.jpg";
 import EatonPark2 from "../../assets/images/EatonPark/EatonPark2.jpg";
@@ -22,6 +27,7 @@ import Vitri9 from "../../assets/images/EatonPark/Vitri9.jpg";
 import Vitri10 from "../../assets/images/EatonPark/Vitri10.jpg";
 import Vitri11 from "../../assets/images/EatonPark/Vitri11.jpg";
 
+import AvatarHoa from "../../assets/images/EatonPark/AvatarHoa.png";
 import { CheckIcon } from "@heroicons/react/20/solid";
 import FloatContact from "../../components/FloatingContact/FloatingContact";
 
@@ -208,24 +214,24 @@ const EatonPark = () => {
                 </div>
               ))}
               <button
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
                 onClick={() =>
                   setCurrentIndex((prevIndex) =>
                     prevIndex === 0 ? slides.length - 1 : prevIndex - 1
                   )
                 }
               >
-                ◀
+                <ChevronLeftIcon className="w-5 h-5" />
               </button>
               <button
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
                 onClick={() =>
                   setCurrentIndex((prevIndex) =>
                     prevIndex === slides.length - 1 ? 0 : prevIndex + 1
                   )
                 }
               >
-                ▶
+                <ChevronRightIcon className="w-5 h-5" />
               </button>
             </div>
             <div className="flex justify-between items-center mt-3">
@@ -238,9 +244,9 @@ const EatonPark = () => {
           <div className="bg-gray-50 p-6 rounded">
             <div className="flex items-center gap-4 mb-6">
               <img
-                src="https://via.placeholder.com/50"
+                src={AvatarHoa}
                 alt="Avatar"
-                className="w-16 h-16 rounded-full object-cover"
+                className="w-20 h-20 rounded-full object-cover"
               />
               <h2 className="text-xl font-semibold text-blue-900">
                 Hòa Anna Homes
@@ -376,24 +382,24 @@ const EatonPark = () => {
                 ></div>
               ))}
               <button
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
                 onClick={() =>
                   setCurrentIndex((prevIndex) =>
                     prevIndex === 0 ? areas.length - 1 : prevIndex - 1
                   )
                 }
               >
-                ◀
+                <ChevronLeftIcon className="w-5 h-5" />
               </button>
               <button
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
                 onClick={() =>
                   setCurrentIndex((prevIndex) =>
                     prevIndex === areas.length - 1 ? 0 : prevIndex + 1
                   )
                 }
               >
-                ▶
+                <ChevronRightIcon className="w-5 h-5" />
               </button>
             </div>
           </div>
@@ -536,10 +542,10 @@ const EatonPark = () => {
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
                   <div className="relative">
                     <button
-                      className="absolute top-4 right-4 text-white text-3xl"
+                      className="absolute bg-gray-700 text-white rounded-full top-5 right-5 text-white p-2 text-3xl hover:bg-gray-600"
                       onClick={closeModal}
                     >
-                      ✖
+                      <XMarkIcon className="w-5 h-5" />
                     </button>
                     <img
                       src={modalImage}

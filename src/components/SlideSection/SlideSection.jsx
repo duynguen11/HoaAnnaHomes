@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import Bg1 from "../../assets/images/bg-1.jpg";
 import Bg2 from "../../assets/images/Bg-2.jpg";
 import Bg3 from "../../assets/images/Bg-3.jpg";
@@ -76,24 +77,24 @@ const SlideSection = () => {
           </div>
         ))}
         <button
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
           onClick={() =>
             setCurrentIndex((prevIndex) =>
               prevIndex === 0 ? slides.length - 1 : prevIndex - 1
             )
           }
         >
-          ◀
+          <ChevronLeftIcon className="w-5 h-5" />
         </button>
         <button
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
           onClick={() =>
             setCurrentIndex((prevIndex) =>
               prevIndex === slides.length - 1 ? 0 : prevIndex + 1
             )
           }
         >
-          ▶
+          <ChevronRightIcon className="w-5 h-5" />
         </button>
       </div>
     </div>

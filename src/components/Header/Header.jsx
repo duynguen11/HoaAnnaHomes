@@ -12,6 +12,10 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/solid";
+import {
   ArrowPathIcon,
   Bars3Icon,
   ChartPieIcon,
