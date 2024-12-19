@@ -14,6 +14,9 @@ import EatonPark6 from "../../assets/images/EatonPark/EatonPark6.jpg";
 import EatonPark7 from "../../assets/images/EatonPark/EatonPark7.jpg";
 import EatonPark8 from "../../assets/images/EatonPark/EatonPark8.jpg";
 import EatonPark9 from "../../assets/images/EatonPark/EatonPark9.jpg";
+import EatonPark10 from "../../assets/images/EatonPark/EatonPark10.jpg";
+import EatonPark11 from "../../assets/images/EatonPark/EatonPark11.jpg";
+import EatonPark12 from "../../assets/images/EatonPark/EatonPark12.jpg";
 
 import Vitri1 from "../../assets/images/EatonPark/Vitri1.jpg";
 import Vitri2 from "../../assets/images/EatonPark/Vitri2.jpg";
@@ -77,6 +80,21 @@ const EatonPark = () => {
       id: 9,
       content: "Slide 9",
       image: EatonPark9,
+    },
+    {
+      id: 10,
+      content: "Slide 10",
+      image: EatonPark10,
+    },
+    {
+      id: 11,
+      content: "Slide 11",
+      image: EatonPark11,
+    },
+    {
+      id: 12,
+      content: "Slide 12",
+      image: EatonPark12,
     },
   ];
   const areas = [
@@ -174,7 +192,7 @@ const EatonPark = () => {
           Anna Homes
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="rounded py-6">
+          <div className="rounded my-4">
             <h2 className="text-xl font-bold text-blue-900 mb-2">EATON PARK</h2>
             <p className="text-sm text-gray-600 mb-3">
               94A Mai Chí Thọ, Phường An Phú, Thành phố Thủ Đức, Thành phố Hồ
@@ -257,26 +275,26 @@ const EatonPark = () => {
             <div className="space-y-4">
               <input
                 type="text"
-                placeholder="Tên"
-                className="w-full p-2 border rounded-md text-sm"
+                placeholder="Tên của bạn"
+                className="w-full p-2 border rounded text-sm"
               />
               <input
                 type="text"
                 placeholder="Số điện thoại/Zalo"
-                className="w-full p-2 border rounded-md text-sm"
+                className="w-full p-2 border rounded text-sm"
               />
               <input
                 type="email"
-                placeholder="Email"
-                className="w-full p-2 border rounded-md text-sm"
+                placeholder="Email liên hệ"
+                className="w-full px-2 py-3 border rounded text-sm"
               />
               <textarea
-                placeholder="Hello, I am interested in [Eaton Park]"
-                className="w-full p-2 border rounded-md text-sm"
+                placeholder="VD: Hello, I am interested in [Eaton Park]"
+                className="w-full p-2 border rounded text-sm"
                 rows="3"
               ></textarea>
               {/* Checkbox */}
-              <div className="flex items-center gap-2 text-sm pt-6">
+              <div className="flex items-center gap-2 text-sm pt-3">
                 <input type="checkbox" id="agree" className="rounded" />
                 <label htmlFor="agree">
                   Đồng ý với{" "}
@@ -299,7 +317,7 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="bg-gray-50 rounded mt-6 p-6">
+          <div className="bg-gray-50 rounded mt-10 p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-3">Tổng quan</h2>
             <hr className="mb-6" />
             <div className="flex space-x-6">
@@ -354,8 +372,8 @@ const EatonPark = () => {
           <div></div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="rounded mt-6 py-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-2">
+          <div className="rounded py-6">
+            <h2 className="text-xl font-bold text-gray-800">
               Vị trí mặt bằng
             </h2>
             <div
@@ -405,7 +423,7 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="bg-gray-50 rounded mt-6 p-6">
+          <div className="bg-gray-50 rounded p-6">
             <h2 className="text-xl font-bold text-gray-800 mb-3">Tiện ích</h2>
             <hr className="mb-6" />
             <div className="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -517,7 +535,7 @@ const EatonPark = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
-          <div className="rounded mt-12">
+          <div className="rounded mt-10">
             <h2 className="text-xl font-bold text-gray-800 mb-3">
               Thư viện ảnh
             </h2>

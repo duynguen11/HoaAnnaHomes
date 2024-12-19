@@ -49,7 +49,7 @@ const RealestateBT = () => {
   return (
     <div className="p-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-blue-900 mb-6">
+        <h2 className="text-2xl font-bold text-blue-900 mb-6">
           Căn hộ cho thuê khu vực Bình Thạnh
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">

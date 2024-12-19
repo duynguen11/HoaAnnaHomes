@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <>
       <div className="p-6">
-        <div className="max-w-7xl mx-auto pb-9">
+        <div className="max-w-7xl mx-auto">
           <img src={Bg1} alt="BgAbout" className="rounded" />
           <div>
             <h2 className="pt-6 text-3xl text-center font-bold text-blue-900 my-6">

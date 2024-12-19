@@ -33,7 +33,7 @@ const IntroSection = () => {
         <img className="rounded" src={""} alt="" />
       </div>
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="pt-6 text-3xl font-bold text-blue-900 mb-6">
+        <h2 className="pt-4 text-3xl font-bold text-blue-900 mb-6">
           Giới thiệu Dịch Vụ Bất Động Sản Hoà Anna Homes
         </h2>
         <p className="text-sm text-gray-600 mb-12">
