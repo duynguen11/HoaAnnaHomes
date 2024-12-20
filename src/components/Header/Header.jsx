@@ -11,10 +11,7 @@ import {
   PopoverGroup,
   PopoverPanel,
 } from "@headlessui/react";
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@heroicons/react/24/solid";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -75,7 +72,7 @@ const products = [
       { name: "EATON PARK", url: "/EatonPark" },
       { name: "GRAND MARINA", url: "/GrandMarina" },
       { name: "GLOBAL CITY", url: "/Globalcity" },
-      { name: "THE OPUSK - METROPOLE", url: "#" },
+      { name: "THE OPUSK - METROPOLE", url: "/Metropole" },
       { name: "LANDCASTER", url: "#" },
       { name: "THẢO ĐIỀN GREEN", url: "#" },
     ],

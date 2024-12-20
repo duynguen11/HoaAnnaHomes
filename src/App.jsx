@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RealestatePageQ1 from "./pages/RealestatePageQ1";
@@ -8,6 +7,7 @@ import RealestatePageQ2 from "./pages/RealestatePageQ2";
 import EatonParkPage from "./pages/EatonParkPage";
 import GrandMarinaPage from "./pages/GrandMarinaPage";
 import GlobalCityPage from "./pages/GlobalCityPage";
+import MetropolePage from "./pages/MetropolePage";
 import AboutPage from "./pages/AboutPage";
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
         <Route path="/EatonPark" element={<EatonParkPage />} />
         <Route path="/GrandMarina" element={<GrandMarinaPage />} />
         <Route path="/GlobalCity" element={<GlobalCityPage />} />
+        <Route path="/Metropole" element={<MetropolePage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
