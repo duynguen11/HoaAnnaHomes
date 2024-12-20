@@ -73,7 +73,7 @@ const products = [
     icon: KeyIcon,
     submenu: [
       { name: "EATON PARK", url: "/EatonPark" },
-      { name: "GRAND MARINA", url: "#" },
+      { name: "GRAND MARINA", url: "/GrandMarina" },
       { name: "GLOBAL CITY", url: "#" },
       { name: "THE OPUSK - METROPOLE", url: "#" },
       { name: "LANDCASTER", url: "#" },

@@ -6,6 +6,7 @@ import {
   ChevronUpIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { CheckIcon } from "@heroicons/react/20/solid";
 
 import EatonPark1 from "../../assets/images/EatonPark/EatonPark1.jpg";
 import EatonPark2 from "../../assets/images/EatonPark/EatonPark2.jpg";
@@ -34,8 +35,7 @@ import Vitri11 from "../../assets/images/EatonPark/Vitri11.jpg";
 import Vitri12 from "../../assets/images/EatonPark/Vitri12.jpg";
 import Vitri13 from "../../assets/images/EatonPark/Vitri13.jpg";
 
-import AvatarHoa from "../../assets/images/EatonPark/AvatarHoa.png";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import AvatarHoa from "../../assets/images/AvatarHoa.png";
 import FloatContact from "../../components/FloatingContact/FloatingContact";
 
 const EatonPark = () => {
