@@ -73,8 +73,8 @@ const products = [
       { name: "GRAND MARINA", url: "/GrandMarina" },
       { name: "GLOBAL CITY", url: "/Globalcity" },
       { name: "THE OPUSK - METROPOLE", url: "/Metropole" },
-      { name: "LANDCASTER", url: "#" },
-      { name: "THẢO ĐIỀN GREEN", url: "#" },
+      { name: "LANDCASTER", url: "/LandCaster" },
+      { name: "THẢO ĐIỀN GREEN", url: "/TDGreen" },
     ],
   },
   {

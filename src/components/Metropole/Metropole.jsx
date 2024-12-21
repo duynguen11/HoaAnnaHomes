@@ -205,7 +205,7 @@ const Metropole = () => {
   return (
     <div className="py-6 px-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-xl font-bold text-blue-900 my-6">
+        <h2 className="text-justify text-xl font-bold text-blue-900 my-6">
           Thông tin dự án The OpusK Metropole ở Trần Bạch Đằng, Phường An Khánh,
           Thành phố Thủ Đức, Thành phố Hồ Chí Minh cập nhật mới nhất tháng
           12/2024 từ Hoà Anna Homes.
@@ -283,13 +283,13 @@ const Metropole = () => {
             </div>
             <hr />
             <div>
-              <p className="text-sm text-gray-600 my-5">
+              <p className="text-justify text-sm text-gray-600 my-5">
                 Kiến tạo chuẩn mực cho cuộc sống phồn vinh, The OpusK là kiệt
                 tác nghệ thuật giữa lòng thành phố. Vươn lên giữa khoảng trời
                 nơi Thủ Thiêm tấp nập, The OpusK Metropole đại diện cho những
                 giá trị sống đặc sắc nhất của phố thị đương đại.
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-justify text-sm text-gray-600">
                 Là điểm nhấn cuối cùng của dự án The Metropole, The OPUSK mang
                 đến một không gian sống thượng lưu với bộ sưu tập 190 căn hộ,
                 một trong những vị trí đắt giá nhất của thành phố Hồ Chí Minh.
@@ -692,6 +692,7 @@ const Metropole = () => {
           </div>
         </div>
       </div>
+      <FloatContact />
     </div>
   );
 };

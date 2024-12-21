@@ -327,7 +327,7 @@ const GlobalCity = () => {
             </div>
             <hr />
             <div>
-              <p className="text-sm text-gray-600 my-5">
+              <p className="text-justify text-sm text-gray-600 my-5">
                 Global City “Downtown” nổi lên như ngọn hải đăng của sự tinh tế
                 đô thị, hòa quyện các biểu tượng Đông Nam Á với trải nghiệm sống
                 quốc tế để tạo nên một khu đô thị mang tính biểu tượng ở trung
@@ -337,7 +337,7 @@ const GlobalCity = () => {
                 điểm đến nổi tiếng toàn cầu như Dubai Downtown hay Marina Bay
                 Sands.
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-justify text-sm text-gray-600">
                 Tọa lạc ở vị trí đắc địa, mặt tiền Đỗ Xuân Hợp và cao tốc TP.HCM
                 - Long Thành - Dầu Giây, giáp sông Rạch Chiếc đẹp như tranh vẽ,
                 The Global City sở hữu quy hoạch tổng thể bao gồm nhiều loại
@@ -768,6 +768,7 @@ const GlobalCity = () => {
           </div>
         </div>
       </div>
+      <FloatContact />
     </div>
   );
 };

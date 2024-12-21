@@ -12,89 +12,88 @@ import FloatContact from "../../components/FloatingContact/FloatingContact";
 
 import AvatarHoa from "../../assets/images/AvatarHoa.png";
 
-import GrandMarina1 from "../../assets/images/GrandMarina/GrandMarina1.jpg";
-import GrandMarina2 from "../../assets/images/GrandMarina/GrandMarina2.jpg";
-import GrandMarina3 from "../../assets/images/GrandMarina/GrandMarina3.jpg";
-import GrandMarina4 from "../../assets/images/GrandMarina/GrandMarina4.jpg";
-import GrandMarina5 from "../../assets/images/GrandMarina/GrandMarina5.jpg";
-import GrandMarina6 from "../../assets/images/GrandMarina/GrandMarina6.jpg";
-import GrandMarina7 from "../../assets/images/GrandMarina/GrandMarina7.jpg";
-import GrandMarina8 from "../../assets/images/GrandMarina/GrandMarina8.jpg";
-import GrandMarina9 from "../../assets/images/GrandMarina/GrandMarina9.jpg";
-import GrandMarina10 from "../../assets/images/GrandMarina/GrandMarina10.jpg";
-import GrandMarina11 from "../../assets/images/GrandMarina/GrandMarina11.jpg";
-import GrandMarina12 from "../../assets/images/GrandMarina/GrandMarina12.jpg";
+import TDGreen1 from "../../assets/images/TDGreen/TDGreen1.jpg";
+import TDGreen2 from "../../assets/images/TDGreen/TDGreen2.jpg";
+import TDGreen3 from "../../assets/images/TDGreen/TDGreen3.jpg";
+import TDGreen4 from "../../assets/images/TDGreen/TDGreen4.jpg";
+import TDGreen5 from "../../assets/images/TDGreen/TDGreen5.jpg";
+import TDGreen6 from "../../assets/images/TDGreen/TDGreen6.jpg";
+import TDGreen7 from "../../assets/images/TDGreen/TDGreen7.jpg";
+import TDGreen8 from "../../assets/images/TDGreen/TDGreen8.jpg";
+import TDGreen9 from "../../assets/images/TDGreen/TDGreen9.jpg";
+import TDGreen10 from "../../assets/images/TDGreen/TDGreen10.jpg";
+import TDGreen11 from "../../assets/images/TDGreen/TDGreen11.jpg";
+import TDGreen12 from "../../assets/images/TDGreen/TDGreen12.jpg";
 
-import Vitri1 from "../../assets/images/GrandMarina/Vitri1.jpg";
-import Vitri2 from "../../assets/images/GrandMarina/Vitri2.jpg";
-import Vitri3 from "../../assets/images/GrandMarina/Vitri3.jpg";
-import Vitri4 from "../../assets/images/GrandMarina/Vitri4.jpg";
-import Vitri5 from "../../assets/images/GrandMarina/Vitri5.jpg";
-import Vitri6 from "../../assets/images/GrandMarina/Vitri6.jpg";
-import Vitri7 from "../../assets/images/GrandMarina/Vitri7.jpg";
-import Vitri8 from "../../assets/images/GrandMarina/Vitri8.jpg";
+import Vitri1 from "../../assets/images/TDGreen/Vitri1.jpg";
+import Vitri2 from "../../assets/images/TDGreen/Vitri2.jpg";
+import Vitri3 from "../../assets/images/TDGreen/Vitri3.jpg";
+import Vitri4 from "../../assets/images/TDGreen/Vitri4.jpg";
+import Vitri5 from "../../assets/images/TDGreen/Vitri5.jpg";
+import Vitri6 from "../../assets/images/TDGreen/Vitri6.jpg";
+import Vitri7 from "../../assets/images/TDGreen/Vitri7.jpg";
 
-const GrandMarina = () => {
+const TDGreen = () => {
   const slides = [
     {
       id: 1,
       content: "Slide 1",
-      image: GrandMarina1,
+      image: TDGreen1,
     },
     {
       id: 2,
       content: "Slide 2",
-      image: GrandMarina2,
+      image: TDGreen2,
     },
     {
       id: 3,
       content: "Slide 3",
-      image: GrandMarina3,
+      image: TDGreen3,
     },
     {
       id: 4,
       content: "Slide 4",
-      image: GrandMarina4,
+      image: TDGreen4,
     },
     {
       id: 5,
       content: "Slide 5",
-      image: GrandMarina5,
+      image: TDGreen5,
     },
     {
       id: 6,
       content: "Slide 6",
-      image: GrandMarina6,
+      image: TDGreen6,
     },
     {
       id: 7,
       content: "Slide 7",
-      image: GrandMarina7,
+      image: TDGreen7,
     },
     {
       id: 8,
       content: "Slide 8",
-      image: GrandMarina8,
+      image: TDGreen8,
     },
     {
       id: 9,
       content: "Slide 9",
-      image: GrandMarina9,
+      image: TDGreen9,
     },
     {
       id: 10,
       content: "Slide 10",
-      image: GrandMarina10,
+      image: TDGreen10,
     },
     {
       id: 11,
       content: "Slide 11",
-      image: GrandMarina11,
+      image: TDGreen11,
     },
     {
       id: 12,
       content: "Slide 12",
-      image: GrandMarina12,
+      image: TDGreen12,
     },
   ];
 
@@ -124,43 +123,43 @@ const GrandMarina = () => {
       content: "Slide 5",
       image: Vitri5,
     },
+    {
+      id: 6,
+      content: "Slide 5",
+      image: Vitri6,
+    },
+    {
+      id: 7,
+      content: "Slide 5",
+      image: Vitri7,
+    },
   ];
 
   const areas2 = [
     {
       id: 1,
-      content: "Mặt bằng tổng thể dự án",
+      content: "Mặt bằng tiện ích",
       image: Vitri2,
     },
     {
       id: 2,
-      content: "Mặt bằng căn hộ điển hình",
+      content: "Mặt bằng tầng điển hình",
       image: Vitri3,
     },
     {
       id: 3,
-      content: "Mặt bằng căn hộ điển hình",
+      content: "Mặt bằng căn hộ 1PN",
       image: Vitri4,
     },
     {
       id: 4,
-      content: "Mặt bằng căn hộ điển hình",
+      content: "Mặt bằng căn hộ 2PN",
       image: Vitri5,
     },
     {
       id: 5,
-      content: "Mặt bằng điển hình Penthouse",
+      content: "Mặt bằng căn hộ 3PN",
       image: Vitri6,
-    },
-    {
-      id: 6,
-      content: "Mặt bằng điển hình Penthouse",
-      image: Vitri7,
-    },
-    {
-      id: 7,
-      content: "Mặt bằng điển hình Penthouse",
-      image: Vitri8,
     },
   ];
 
@@ -197,22 +196,23 @@ const GrandMarina = () => {
       return () => clearInterval(interval); // Clear interval khi unmount
     }
   }, [slides.length, isPaused]);
-
+  
   return (
     <div className="py-6 px-3">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-justify text-xl font-bold text-blue-900 my-6">
-          Thông tin dự án Grand Marina Saigon ở 02 Tôn Đức Thắng, Phường Bến
-          Nghé, Quận 1, Thành phố Hồ Chí Minh cập nhật mới nhất tháng 12/2024 từ
-          Hoà Anna Homes
+          Thông tin dự án Thảo Điền Green ở 192 Nguyễn Văn Hưởng, Phường Thảo
+          Điền, Thành phố Thủ Đức, Thành phố Hồ Chí Minh cập nhật mới nhất tháng
+          12/2024 từ Hoà Anna Homes.
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
           <div className="rounded my-4">
             <h2 className="text-xl font-bold text-blue-900 mb-2">
-              GRAND MARINA
+              THẢO ĐIỀN GREEN
             </h2>
             <p className="text-sm text-gray-600 mb-3">
-              02 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+              192 Nguyễn Văn Hưởng, Phường Thảo Điền, Thành phố Thủ Đức, Thành
+              phố Hồ Chí Minh
             </p>
             <div
               className="w-full mx-auto rounded relative overflow-hidden h-[35vh] md:h-[50vh] lg:h-[60vh]"
@@ -269,25 +269,24 @@ const GrandMarina = () => {
               </button>
             </div>
             <div className="flex justify-between items-center my-3">
-              <h2 className="text-xl font-bold text-blue-900">25 tỷ - 67 tỷ</h2>
+              <h2 className="text-xl font-bold text-blue-900">
+                6,10 tỷ - 25 tỷ
+              </h2>
               <p className="text-sm font-bold text-gray-700">CĂN HỘ</p>
             </div>
             <hr />
             <div>
               <p className="text-justify text-sm text-gray-600 my-5">
-                Grand Marina Saigon là dự án đóng vai trò quan trọng trong một
-                khu phức hợp tổng hợp dự kiến ​​bao gồm các đơn vị ở, văn phòng
-                và thương mại đạt chuẩn 5 sao quốc tế tương xứng với thương hiệu
-                Marriott tầm cỡ thế giới. Với vị trí độc tôn, Grand Marina
-                Saigon là trái tim của Quận 1 TP. HCM với tầm nhìn sông Sài Gòn
-                bất tận.
+                Tọa lạc tại địa chỉ 192 Nguyễn Văn Hưởng, Phường Thảo Điền, TP.
+                Thủ Đức, Thảo Điền Green là dự án căn hộ cao cấp duy nhất còn
+                lại được phát trên trục đường với tiêu chuẩn xứng tầm cho một
+                cộng đồng cư dân chuẩn quốc tế của Thảo Điền.
               </p>
               <p className="text-justify text-sm text-gray-600">
-                Mỗi dịch vụ “Retreat” riêng tư sẽ cung cấp quyền sử dụng hàng
-                loạt các tiện nghi chất lượng chuẩn khách sạn và các dịch vụ dựa
-                trên từng yêu cầu. Grand Marina Saigon hứa hẹn sẽ mang đến cả
-                dịch vụ chuẩn khách sạn quốc tế và uy tín để nâng cao phong cách
-                sống và giải trí dưới một mái nhà.
+                Vị trí sở hữu một tầm nhìn hoàn hảo toàn cảnh về sông Sài Gòn đã
+                tạo ra cảm hứng âm nhạc cho sản phẩm Thảo Điền Green, một tuyệt
+                tác được sáng tạo như những phím đàn piano sắp xếp nhịp nhàng
+                theo cấu trúc tầng bậc và đan xen cùng nghệ thuật ánh sáng.
               </p>
             </div>
           </div>
@@ -371,7 +370,13 @@ const GrandMarina = () => {
                       Tên dự án
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Grand Marina, Saigon
+                      Thảo Điền Green
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">Vị trí</td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      192 Nguyễn Văn Hưởng, Phường Thảo Điền, Quận 2, TP HCM
                     </td>
                   </tr>
                   <tr>
@@ -379,57 +384,77 @@ const GrandMarina = () => {
                       Chủ đầu tư
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Masterise Homes
+                      Công ty Cổ phần Đầu tư Bất động sản SIC
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Địa chỉ
+                      Thiết kế
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Số 02 Tôn Đức Thắng, P. Bến Nghé, Quận 1, TP. HCM
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Diện tích đất:
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">10 ha</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Loại hình sản phẩm
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Căn hộ và Officetel (Marriott & JW Marriott)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">số toà</td>
-                    <td className="border border-gray-300 px-4 py-2">08 toà</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Chiều cao
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      36 - 47 tầng
+                      Thiết kế ý tưởng B + H Architects
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Tổng số sản phẩm
+                      Tổng thầu xây dựng
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Khoảng 4,200 căn
+                      Tổng thầu thi công Central Cons
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Diện tích trung bình
+                      Quản lý và vận hành giám sát
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">FQM</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Diện tích
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      41.46m2 - 265.86m2
+                      5.000 m2
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Tổng diện tích sàn xây dựng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      40.000 m2
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Mật độ xây dựng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Căn hộ cao cấp
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Quy mô dự án
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      204 căn hộ, 9 căn shophouse
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Số tầng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      25 tầng nổi và 2 tầng hầm
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Khởi công xây dựng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Năm 2020
                     </td>
                   </tr>
                   <tr>
@@ -437,23 +462,39 @@ const GrandMarina = () => {
                       Dự kiến bàn giao
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Q2/2024
+                      Năm 2020
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Tiêu chuẩn bàn giao
+                      Hình thức sở hữu
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Hoàn thiện sang trọng
+                      <ul className="list-disc pl-5">
+                        <li>Người Việt Nam Sổ hồng lâu dài</li>
+                        <li>
+                          Người nước ngoài: Sở hữu 50 năm theo luật pháp hiện
+                          hành
+                        </li>
+                      </ul>
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Pháp lý
+                      Chủ đầu tư và đối tác thực hiện dự án
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Lâu dài cho người Việt Nam & 50 năm cho người nước ngoài
+                      <ul className="list-disc pl-5">
+                        <li>Chủ đầu tư: Công ty CP Đầu Tư BDS SIC</li>
+                        <li>Thiết kế ý tưởng: B + H Architects</li>
+                        <li>Thiết kế kiến trúc: HYAN Design Construction</li>
+                        <li>Thiết kế cảnh quan: Landarch</li>
+                        <li>
+                          Thiết kế nội thất: TTID Design & Build Contractor
+                        </li>
+                        <li>Nhà thầu chính: Centralcons</li>
+                        <li>Ngân hàng bảo lãnh: Vietcombank và IndoVina</li>
+                      </ul>
                     </td>
                   </tr>
                 </tbody>
@@ -549,79 +590,61 @@ const GrandMarina = () => {
               <div className="flex-1">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Cầu Đi Dạo Trên Không</p>
-                </div>
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Royal Park Lotus Park</p>
-                </div>
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
-                    Đường chạy bộ dọc theo hồ bơi
+                    Sân chơi thể thao ngoài trời
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Hồ bơi Panorama</p>
+                  <p className="text-sm text-gray-700">
+                    Vườn đọc sách – đánh cờ
+                  </p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Sân chơi trẻ em</p>
+                  <p className="text-sm text-gray-700">
+                    Sân tập Yoga trên cao và ngồi thiền đẳng cấp
+                  </p>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Phòng tập yoga, phòng gym
-                  </p>
+                  <p className="text-sm text-gray-700">Vườn bí mật</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
-                    Sân thể thao đa năng, sân quần vợt
+                    Thang kết nối trên cao
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Công viên nội khu</p>
+                  <p className="text-sm text-gray-700">Khu BBQ ngoài trời</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Sun Park</p>
-                </div>
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Sun Tower</p>
+                  <p className="text-sm text-gray-700">Hồ bơi trẻ em</p>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Sân tập Aerobic – Dưỡng sinh
-                  </p>
+                  <p className="text-sm text-gray-700">Jacuzzi</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
                   <p className="text-sm text-gray-700">
-                    Tắm hơi và tắm thủy lực
+                    Sàn tắm nắng ngập nước
                   </p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Bến Du Thuyền</p>
+                  <p className="text-sm text-gray-700">Vườn thảo mộc</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Khu thực tế ảo</p>
-                </div>
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Chuỗi nhà hàng ẩm thực
-                  </p>
+                  <p className="text-sm text-gray-700">Khu vui chơi trẻ em</p>
                 </div>
               </div>
             </div>
@@ -675,4 +698,4 @@ const GrandMarina = () => {
   );
 };
 
-export default GrandMarina;
+export default TDGreen;

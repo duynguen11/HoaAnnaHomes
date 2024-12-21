@@ -8,6 +8,8 @@ import EatonParkPage from "./pages/EatonParkPage";
 import GrandMarinaPage from "./pages/GrandMarinaPage";
 import GlobalCityPage from "./pages/GlobalCityPage";
 import MetropolePage from "./pages/MetropolePage";
+import TDGreenPage from "./pages/TDGreenPage";
+import LandCasterPage from "./pages/LandCasterPage";
 import AboutPage from "./pages/AboutPage";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/GrandMarina" element={<GrandMarinaPage />} />
         <Route path="/GlobalCity" element={<GlobalCityPage />} />
         <Route path="/Metropole" element={<MetropolePage />} />
+        <Route path="/TDGreen" element={<TDGreenPage />} />
+        <Route path="/LandCaster" element={<LandCasterPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
