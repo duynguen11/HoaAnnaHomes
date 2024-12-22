@@ -16,7 +16,7 @@ const RealestateQ2 = () => {
       description: "Đã bàn giao",
       author: "CapitalLand Development VN",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "DEdgeList",
     },
     {
       imageUrl: GreenImg,

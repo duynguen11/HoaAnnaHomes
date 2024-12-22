@@ -327,7 +327,7 @@ const EatonPark = () => {
             </div>
             <div className="flex justify-between items-center my-3">
               <h2 className="text-xl font-bold text-blue-900">
-                5,80 tỷ - 89 tỷ
+                5,80 tỷ - 89 tỷ (120 - 180 triệu/ m2)
               </h2>
               <p className="text-sm font-bold text-gray-700">CĂN HỘ</p>
             </div>

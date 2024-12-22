@@ -8,7 +8,7 @@ const FloatingContact = () => {
       <div className="fixed bottom-4 right-4 flex flex-col items-center gap-4 z-50">
         {/* Zalo */}
         <a
-          href="https://zalo.me/your-zalo-id"
+          href="https://zalo.me/0906821738"
           target="_blank"
           rel="noopener noreferrer"
           className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
@@ -22,7 +22,7 @@ const FloatingContact = () => {
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/your-phone-number"
+          href="https://wa.me/0938846848"
           target="_blank"
           rel="noopener noreferrer"
           className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
@@ -36,7 +36,7 @@ const FloatingContact = () => {
 
         {/* Phone */}
         <a
-          href="tel:your-phone-number"
+          href="tel:0906821738"
           className="w-16 h-16 bg-red-300 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
         >
           <img
