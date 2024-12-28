@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import SaigonpearlImg from "../../assets/images/RealestateBT/Saigonpearl.jpg";
 import ManorImg from "../../assets/images/RealestateBT/Manor.jpeg";
 import VinhomesImg from "../../assets/images/RealestateBT/VinhomesCentral.jpg";
@@ -93,12 +95,12 @@ const RealestateBT = () => {
                   </div>
 
                   {/* Nút xem chi tiết */}
-                  <a
-                    href={card.detailUrl}
+                  <Link
+                    to={card.detailUrl}
                     className="ml-auto inline-block rounded bg-red-500 p-2 text-sm font-semibold text-white hover:bg-red-700 transition-colors"
                   >
                     Thông tin dự án
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
