@@ -81,7 +81,7 @@ const products = [
     name: "VĂN PHÒNG CHO THUÊ",
     description: "Connect with third-party tools",
     icon: MapIcon,
-    submenu: [{ name: "CREST METROPOLE", url: "#" }],
+    submenu: [{ name: "CREST METROPOLE", url: "/CrestMetropole" }],
   },
   {
     name: "NHÀ PHỐ - VILLA",

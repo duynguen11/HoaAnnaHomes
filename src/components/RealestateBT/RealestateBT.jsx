@@ -23,7 +23,7 @@ const RealestateBT = () => {
       description: "Đã bàn giao",
       author: "Tập đoàn Vingroup",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/VinhomesCentralPark-BT",
     },
     {
       imageUrl: ManorImg,
@@ -33,7 +33,7 @@ const RealestateBT = () => {
       description: "Bàn giao năm 2010",
       author: "Tập đoàn Bitexco",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/TheManor-BT",
     },
     {
       imageUrl: SaigonpearlImg,
@@ -43,7 +43,7 @@ const RealestateBT = () => {
       description: "Đang mở bán",
       author: "Công ty CP tập đoàn S.S.G",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/SGPearl-BT",
     },
   ];
   return (
