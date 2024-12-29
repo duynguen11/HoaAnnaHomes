@@ -58,7 +58,7 @@ const products = [
     description: "Speak directly to your customers",
     icon: BuildingOfficeIcon,
     submenu: [
-      { name: "SUNWAH", url: "#" },
+      { name: "SUNWAH", url: "/SunWah-BT" },
       { name: "DIAMOND ISLAND", url: "#" },
       { name: "METROPOLE", url: "/Metropole" },
       { name: "PEARL PLAZA", url: "#" },

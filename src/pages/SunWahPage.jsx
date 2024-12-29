@@ -2,14 +2,14 @@ import Header from "../components/Header/Header";
 import SunWah from "../components/RealestateBT/SunWah/SunWah";
 import Footer from "../components/Footer/Footer";
 
-const ManorPageBT = () => {
+const SunWahPage = () => {
   return (
     <>
       <Header />
-      <Manor />
+      <SunWah />
       <Footer />
     </>
   );
 };
 
-export default ManorPageBT;
+export default SunWahPage;

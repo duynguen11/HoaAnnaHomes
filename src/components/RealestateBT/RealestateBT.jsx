@@ -15,7 +15,7 @@ const RealestateBT = () => {
       description: "Đã bàn giao",
       author: "Công ty Sunwah Properties",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/SunWah-BT",
     },
     {
       imageUrl: VinhomesImg,

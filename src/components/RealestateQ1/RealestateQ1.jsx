@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import GoldenRiverImg from "../../assets/images/RealestateQ1/GoldenRiver.jpg";
 import GrandMariaImg from "../../assets/images/RealestateQ1/Grandmaria.jpg";
+import LandCasterImg from "../../assets/images/RealestateQ1/LandCaster.jpg";
 
 const RealestateQ1 = () => {
   const cardData = [
@@ -13,7 +14,7 @@ const RealestateQ1 = () => {
       description: "Đã bàn giao 4 tòa - Đang mở bán 2 tòa",
       author: "Tập đoàn Vingroup",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/VinhomeGolden-Q1",
     },
     {
       imageUrl: GrandMariaImg,
@@ -26,7 +27,7 @@ const RealestateQ1 = () => {
       detailUrl: "/GrandMarina",
     },
     {
-      imageUrl: "https://via.placeholder.com/600x400",
+      imageUrl: LandCasterImg,
       propertyCount: "",
       priceRange: "",
       title: "Landcaster",

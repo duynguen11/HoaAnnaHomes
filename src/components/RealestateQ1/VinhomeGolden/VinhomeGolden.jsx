@@ -8,172 +8,91 @@ import {
 } from "@heroicons/react/24/solid";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
-import FloatContact from "../../components/FloatingContact/FloatingContact";
+import VinhomeGolden1 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden1.jpg";
+import VinhomeGolden2 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden2.jpg";
+import VinhomeGolden3 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden3.jpg";
+import VinhomeGolden4 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden4.jpg";
+import VinhomeGolden5 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden5.jpg";
+import VinhomeGolden6 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden6.jpg";
+import VinhomeGolden7 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden7.jpg";
+import VinhomeGolden8 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden8.jpg";
+import VinhomeGolden9 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden9.jpg";
+import VinhomeGolden10 from "../../../assets/images/RealestateQ1/VinhomeGolden/VinhomeGolden10.jpg";
 
-import AvatarHoa from "../../assets/images/AvatarHoa.png";
+import Vitri1 from "../../../assets/images/RealestateQ1/VinhomeGolden/Vitri1.jpg";
 
-import Metropole1 from "../../assets/images/Metropole/Metropole1.jpg";
-import Metropole2 from "../../assets/images/Metropole/Metropole2.jpg";
-import Metropole3 from "../../assets/images/Metropole/Metropole3.jpg";
-import Metropole4 from "../../assets/images/Metropole/Metropole4.jpg";
-import Metropole5 from "../../assets/images/Metropole/Metropole5.jpg";
-import Metropole6 from "../../assets/images/Metropole/Metropole6.jpg";
-import Metropole7 from "../../assets/images/Metropole/Metropole7.jpg";
-import Metropole8 from "../../assets/images/Metropole/Metropole8.jpg";
-import Metropole9 from "../../assets/images/Metropole/Metropole9.jpg";
-import Metropole10 from "../../assets/images/Metropole/Metropole10.jpg";
-import Metropole11 from "../../assets/images/Metropole/Metropole11.jpg";
-import Metropole12 from "../../assets/images/Metropole/Metropole12.jpg";
+import AvatarHoa from "../../../assets/images/AvatarHoa.png";
+import FloatContact from "../../../components/FloatingContact/FloatingContact";
 
-import Vitri1 from "../../assets/images/Metropole/Vitri1.jpg";
-import Vitri2 from "../../assets/images/Metropole/Vitri2.jpg";
-import Vitri3 from "../../assets/images/Metropole/Vitri3.jpg";
-import Vitri4 from "../../assets/images/Metropole/Vitri4.png";
-import Vitri5 from "../../assets/images/Metropole/Vitri5.png";
-import Vitri6 from "../../assets/images/Metropole/Vitri6.png";
-import Vitri7 from "../../assets/images/Metropole/Vitri7.png";
+const slides = [
+  {
+    id: 1,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden1,
+  },
+  {
+    id: 2,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden2,
+  },
+  {
+    id: 3,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden3,
+  },
+  {
+    id: 4,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden4,
+  },
+  {
+    id: 5,
+    content: "VinhomeGolden Golden River",
+    image: VinhomeGolden5,
+  },
+  {
+    id: 6,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden6,
+  },
+  {
+    id: 7,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden7,
+  },
+  {
+    id: 8,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden8,
+  },
+  {
+    id: 9,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden9,
+  },
+  {
+    id: 10,
+    content: "Vinhome Golden River",
+    image: VinhomeGolden10,
+  },
+];
 
-const Metropole = () => {
-  const slides = [
-    {
-      id: 1,
-      content: "Slide 1",
-      image: Metropole1,
-    },
-    {
-      id: 2,
-      content: "Slide 2",
-      image: Metropole2,
-    },
-    {
-      id: 3,
-      content: "Slide 3",
-      image: Metropole3,
-    },
-    {
-      id: 4,
-      content: "Slide 4",
-      image: Metropole4,
-    },
-    {
-      id: 5,
-      content: "Slide 5",
-      image: Metropole5,
-    },
-    {
-      id: 6,
-      content: "Slide 6",
-      image: Metropole6,
-    },
-    {
-      id: 7,
-      content: "Slide 7",
-      image: Metropole7,
-    },
-    {
-      id: 8,
-      content: "Slide 8",
-      image: Metropole8,
-    },
-    {
-      id: 9,
-      content: "Slide 9",
-      image: Metropole9,
-    },
-    {
-      id: 10,
-      content: "Slide 10",
-      image: Metropole10,
-    },
-    {
-      id: 11,
-      content: "Slide 11",
-      image: Metropole11,
-    },
-    {
-      id: 12,
-      content: "Slide 12",
-      image: Metropole12,
-    },
-  ];
+const areas2 = [
+  {
+    id: 1,
+    content: "Mặt bằng tổng thể dự án",
+    image: Vitri1,
+  },
+];
 
-  const areas = [
-    {
-      id: 1,
-      content: "Slide 1",
-      image: Vitri1,
-    },
-    {
-      id: 2,
-      content: "Slide 2",
-      image: Vitri2,
-    },
-    {
-      id: 3,
-      content: "Slide 3",
-      image: Vitri3,
-    },
-    {
-      id: 4,
-      content: "Slide 4",
-      image: Vitri4,
-    },
-    {
-      id: 5,
-      content: "Slide 5",
-      image: Vitri5,
-    },
-    {
-      id: 6,
-      content: "Slide 5",
-      image: Vitri6,
-    },
-    {
-      id: 7,
-      content: "Slide 5",
-      image: Vitri7,
-    },
-  ];
-
-  const areas2 = [
-    {
-      id: 1,
-      content: "Mặt bằng tổng thể dự án",
-      image: Vitri2,
-    },
-    {
-      id: 2,
-      content: "Mặt bằng tiện ích",
-      image: Vitri3,
-    },
-    {
-      id: 3,
-      content: "Mặt bằng căn hộ 1PN",
-      image: Vitri4,
-    },
-    {
-      id: 4,
-      content: "Mặt bằng căn hộ 2PN",
-      image: Vitri5,
-    },
-    {
-      id: 5,
-      content: "Mặt bằng căn hộ 3PN",
-      image: Vitri6,
-    },
-    {
-      id: 6,
-      content: "Mặt bằng căn hộ 4PN",
-      image: Vitri7,
-    },
-  ];
-
+const VinhomeGolden = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [modalImage, setModalImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false); // Điều khiển mở modal
   const [openItems, setOpenItems] = useState(Array(areas2.length).fill(false));
 
+  // Mở modal và hiển thị ảnh
   const openModal = (image) => {
     setModalImage(image); // Lưu ảnh được click
     setIsModalOpen(true); // Mở modal
@@ -205,19 +124,13 @@ const Metropole = () => {
   return (
     <div className="py-6 px-3">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-justify text-xl font-bold text-blue-900 my-6">
-          Thông tin dự án The OpusK Metropole ở Trần Bạch Đằng, Phường An Khánh,
-          Thành phố Thủ Đức, Thành phố Hồ Chí Minh cập nhật mới nhất tháng
-          12/2024 từ Hoà Anna Homes.
-        </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
           <div className="rounded my-4">
             <h2 className="text-xl font-bold text-blue-900 mb-2">
-              THE METROPOLE
+              VINHOMES GOLDEN RIVER
             </h2>
             <p className="text-sm text-gray-600 mb-3">
-              Trần Bạch Đằng, Phường An Khánh, Thành phố Thủ Đức, Thành phố Hồ
-              Chí Minh
+              Phố Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Hồ Chí Minh.
             </p>
             <div
               className="w-full mx-auto rounded relative overflow-hidden h-[35vh] md:h-[50vh] lg:h-[60vh]"
@@ -243,11 +156,11 @@ const Metropole = () => {
                 >
                   {/* Overlay thông tin */}
                   <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded">
-                    <h2 className="text-lg md:text-2xl lg:text-4xl font-bold">
+                    <h2 className="text-lg md:text-xl lg:text-4xl font-bold">
                       {slide.content}
                     </h2>
-                    <p className="text-sm md:text-base">
-                      {slide.description || "Mô tả chi tiết cho ảnh này."}
+                    <p className="text-sm font-bold md:text-base">
+                      {slide.description || "Diện tích: 2,53 ha"}
                     </p>
                   </div>
                 </div>
@@ -275,24 +188,21 @@ const Metropole = () => {
             </div>
             <div className="flex justify-between items-center my-3">
               <h2 className="text-xl font-bold text-blue-900">
-                6,50 tỷ - 61 tỷ
+                111,45 - 1.296,02 triệu/ m2
               </h2>
-              <p className="text-sm font-bold text-gray-700">
-                CĂN HỘ, SHOPHOUSE
-              </p>
+              <p className="text-sm font-bold text-gray-700"> CĂN HỘ</p>
             </div>
             <hr />
             <div>
-              <p className="text-justify text-sm text-gray-600 my-5">
-                Kiến tạo chuẩn mực cho cuộc sống phồn vinh, The OpusK là kiệt
-                tác nghệ thuật giữa lòng thành phố. Vươn lên giữa khoảng trời
-                nơi Thủ Thiêm tấp nập, The OpusK Metropole đại diện cho những
-                giá trị sống đặc sắc nhất của phố thị đương đại.
-              </p>
-              <p className="text-justify text-sm text-gray-600">
-                Là điểm nhấn cuối cùng của dự án The Metropole, The OPUSK mang
-                đến một không gian sống thượng lưu với bộ sưu tập 190 căn hộ,
-                một trong những vị trí đắt giá nhất của thành phố Hồ Chí Minh.
+              <p className="text-sm text-gray-600 my-5">
+                Vinhomes Golden River Ba Son là dự án căn hộ cao cấp của tập
+                đoàn VinGroup. Dự án có vị trí ngay tại quỹ đất vàng, thuộc nhà
+                máy đóng tàu cảng Ba Son - Sài Gòn, đây là một trong những địa
+                danh đã đi vào lịch sử của Tp.HCM. Vinhomes Golden River Ba Son
+                được chủ đầu tư quy hoạch và phát triển trở thành một khu phức
+                hợp cao cấp khép kín, sử dụng tốt đa ưu thế của bờ sông Sài Gòn
+                để phát triển không gian cộng đồng, hệ thống công viên xanh,
+                giải trí.
               </p>
             </div>
           </div>
@@ -372,114 +282,17 @@ const Metropole = () => {
                 </thead>
                 <tbody>
                   <tr>
+                    <td className="border border-gray-300 px-4 py-2">Giá</td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Tên dự án
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      The OpusK Residence
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">Vị trí</td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Lô 1.14 khu chức năng số 1 Thủ Thiêm, P. An Khánh, TP. Thủ
-                      Đức
+                      111,45 - 1.296,02 triệu/m²
                     </td>
                   </tr>
                   <tr>
                     <td className="border border-gray-300 px-4 py-2">
-                      Chủ đầu tư
+                      Diện tích
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Sonkim Land
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Đối tác phát triển dự án
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      <ul className="list-disc pl-5">
-                        <li>Đơn vị phát triển: Sonkim Land</li>
-                        <li>Chủ đầu tư: Quốc Lộc Phát</li>
-                        <li>
-                          Thiết kế kiến trúc và Quy hoạch tổng thể: DP
-                          Architects Pte. Ltd, Singapore
-                        </li>
-                        <li>Thiết kế nội thất: Công ty ID Dept Singapore</li>
-                        <li>
-                          Thiết kế cảnh quan: Công ty Site Concepts
-                          International, USA & Philippines
-                        </li>
-                        <li>
-                          Thiết kế cơ điện: Công ty J.Roger Preston Vietnam co.
-                          Ltd, Singapore
-                        </li>
-                        <li>
-                          Thiết kế dân dụng và kết cấu: Công ty Acons, Vietnam
-                        </li>
-                        <li>Nhà thầu chính: Công ty TBU</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Diện tích đất
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      8,572.3m2
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Loại hình sản phẩm
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Căn hộ, Duplex, Loft, Sky Villas, Retails, Office
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">Số toà</td>
-                    <td className="border border-gray-300 px-4 py-2">02 toà</td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Chiều cao
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      28 và 36 tầng
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Tổng số sản phẩm
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      192 căn
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Diện tích trung bình
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      58m2 - 230m2
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Dự kiến bàn giao
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Q2/2026
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Tiêu chuẩn bàn giao
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      Hoàn thiện cao cấp
+                      2,53 ha
                     </td>
                   </tr>
                   <tr>
@@ -487,7 +300,36 @@ const Metropole = () => {
                       Pháp lý
                     </td>
                     <td className="border border-gray-300 px-4 py-2">
-                      Lâu dài cho người Việt Nam, 50 năm cho người nước ngoài
+                      Sổ hồng sở hữu lâu dài
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Mật độ xây dựng
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">18%</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">Quy mô</td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      bao gồm 4 phân khu chính The Front – The Luxury – The Aqua
+                      – Khu The Victoria
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Pháp lý
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Sổ hồng sở hữu lâu dài
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Chủ đầu tư
+                    </td>
+                    <td className="border border-gray-300 px-4 py-2">
+                      Chủ đầu tưTập đoàn Vingroup
                     </td>
                   </tr>
                 </tbody>
@@ -498,52 +340,22 @@ const Metropole = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-[2fr_1fr] lg:grid-cols-[2fr_1fr]">
           <div className="rounded py-6">
-            <h2 className="text-xl font-bold text-gray-800 ml-2">
+            <h2 className="text-xl font-bold text-gray-800 mt-4 ml-2">
               Vị trí mặt bằng
             </h2>
-            <div
-              className="w-full mx-auto rounded relative overflow-hidden h-[50vh] md:h-[55vh] lg:h-[70vh] py-4"
-              onMouseEnter={() => setIsPaused(true)} // Tạm dừng khi hover
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              {areas.map((area, index) => (
-                <div
-                  key={area.id}
-                  className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
-                    index === currentIndex
-                      ? "translate-x-0"
-                      : "translate-x-full"
-                  }`}
-                  style={{
-                    backgroundImage: `url(${area.image})`,
-                    backgroundSize: "contain", // Ensures the image is fully visible and scaled
-                    backgroundPosition: "center", // Centers the image
-                    backgroundRepeat: "no-repeat", // Prevents tiling
-                    width: "100%", // Set width to 100% of the parent container
-                    height: "100%", // Adjust height as needed
-                  }}
-                ></div>
-              ))}
-              <button
-                className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
-                onClick={() =>
-                  setCurrentIndex((prevIndex) =>
-                    prevIndex === 0 ? areas.length - 1 : prevIndex - 1
-                  )
-                }
-              >
-                <ChevronLeftIcon className="w-5 h-5" />
-              </button>
-              <button
-                className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full"
-                onClick={() =>
-                  setCurrentIndex((prevIndex) =>
-                    prevIndex === areas.length - 1 ? 0 : prevIndex + 1
-                  )
-                }
-              >
-                <ChevronRightIcon className="w-5 h-5" />
-              </button>
+            <div className="p-2">
+              <p className="text-sm text-gray-600 mb-3">
+                Sunwah Pearl tọa lạc tại số 90 Nguyễn Hữu Cảnh, phường 22, quận
+                Bình Thạnh, Tp.HCM. Dự án sở hữu vị trí đẹp tại trung tâm quận
+                Bình Thạnh, từ vị trí này cư dân sinh sống tại Sunwah Pearl sẽ
+                thuận tiện di chuyển đến tiện ích ngoại khu như:
+              </p>
+              <p className="text-sm text-gray-600 mb-3">
+                2,9km đến chợ Bến Thành, 2,4km đến tòa nhà Bitexco, 2,3km đến
+                phố đi bộ Nguyễn Huệ, 2,1km đến hầm Thủ Thiêm, 2,7km đến khu đô
+                thị Phú Mỹ Hưng
+              </p>
+              <img src={Vitri1} alt="" className="w-full h-auto rounded" />
             </div>
             <div className="p-2">
               {areas2.map((item, index) => (
@@ -583,67 +395,91 @@ const Metropole = () => {
               <div className="flex-1">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Hồ nước nóng và spa ngoài trời
-                  </p>
+                  <p className="text-sm text-gray-700">Bãi đỗ xe</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Sân chơi thư giãn trên không Green Loft
-                  </p>
+                  <p className="text-sm text-gray-700">Công viên</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Khu Massage ngoài trời
-                  </p>
+                  <p className="text-sm text-gray-700">Phòng Gym</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Bồn tắm massage thuỷ trị liệu
-                  </p>
-                </div>
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Chòi Sauna</p>
+                  <p className="text-sm text-gray-700">HT An ninh</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Khu chức năng dưới nước
-                  </p>
+                  <p className="text-sm text-gray-700">Lối thoát hiểm</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Công viên cây xanh</p>
+                  <p className="text-sm text-gray-700">Hồ bơi</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">
-                    Phòng Gym chuyên nghiệp
-                  </p>
+                  <p className="text-sm text-gray-700">Phòng sinh hoạt</p>
                 </div>
               </div>
               <div className="flex-1">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Yoga</p>
+                  <p className="text-sm text-gray-700">Siêu thị</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Sân golf giả lập</p>
+                  <p className="text-sm text-gray-700">Lễ tân</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Hồ bơi tràn bờ</p>
+                  <p className="text-sm text-gray-700">Trường mẫu giáo</p>
                 </div>
                 <div className="flex items-center mb-3">
                   <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
-                  <p className="text-sm text-gray-700">Hồ bơi trẻ em</p>
+                  <p className="text-sm text-gray-700">Thang máy</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">BBQ</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Phòng xông hơi</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Phòng Yoga</p>
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">HT Điều hòa</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Hệ thống PCCC</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Hồ bơi vô cực</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">ATM & Ngân hàng</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Vui chơi trẻ em</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Cửa hàng tiện lợi</p>
+                </div>
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="w-4 h-4 mr-1 text-gray-500" />
+                  <p className="text-sm text-gray-700">Coffee</p>
                 </div>
               </div>
             </div>
@@ -697,4 +533,4 @@ const Metropole = () => {
   );
 };
 
-export default Metropole;
+export default VinhomeGolden;

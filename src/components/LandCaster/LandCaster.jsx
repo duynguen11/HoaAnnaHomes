@@ -17,7 +17,6 @@ import LandCaster2 from "../../assets/images/LandCaster/LandCaster2.jpg";
 import LandCaster3 from "../../assets/images/LandCaster/LandCaster3.jpg";
 import LandCaster4 from "../../assets/images/LandCaster/LandCaster4.jpg";
 import LandCaster5 from "../../assets/images/LandCaster/LandCaster5.jpg";
-import LandCaster6 from "../../assets/images/LandCaster/LandCaster6.jpg";
 import LandCaster7 from "../../assets/images/LandCaster/LandCaster7.jpg";
 import LandCaster8 from "../../assets/images/LandCaster/LandCaster8.jpg";
 import LandCaster9 from "../../assets/images/LandCaster/LandCaster9.jpg";
@@ -64,7 +63,7 @@ const LandCaster = () => {
     {
       id: 6,
       content: "Slide 6",
-      image: LandCaster6,
+      image: LandCaster5,
     },
     {
       id: 7,

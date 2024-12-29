@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import RealestatePageQ1 from "./pages/RealestatePageQ1";
+import VinhomeGoldenPageQ1 from "./pages/VinhomeGoldenPageQ1";
 import RealestatePageBT from "./pages/RealestatePageBT";
 import VinhomeCentralPageBT from "./pages/VinhomeCentralPageBT";
 import ManorPageBT from "./pages/ManorPageBT";
 import DEdgePageBT from "./pages/DEdgePageBT";
 import SGPearlPageBT from "./pages/SGPearlPageBT";
+import SunWahPage from "./pages/SunWahPage";
 import RealestatePageTT from "./pages/RealestatePageTT";
 import RealestatePageQ2 from "./pages/RealestatePageQ2";
 import EatonParkPage from "./pages/EatonParkPage";
@@ -23,11 +25,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/realestateQ1" element={<RealestatePageQ1 />} />
+        <Route path="/VinhomeGolden-Q1" element={<VinhomeGoldenPageQ1 />} />
         <Route path="/realestateBT" element={<RealestatePageBT />} />
         <Route path="/VinhomesCentralPark-BT" element={<VinhomeCentralPageBT />} />
         <Route path="/TheManor-BT" element={<ManorPageBT />} />
         <Route path="/DEdgeTown-BT" element={<DEdgePageBT />} />
         <Route path="/SGPearl-BT" element={<SGPearlPageBT />} />
+        <Route path="/SunWah-BT" element={<SunWahPage/>} />
         <Route path="/realestateTT" element={<RealestatePageTT />} />
         <Route path="/realestateQ2" element={<RealestatePageQ2 />} />
         <Route path="/EatonPark" element={<EatonParkPage />} />
