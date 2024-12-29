@@ -60,7 +60,7 @@ const products = [
     submenu: [
       { name: "SUNWAH", url: "#" },
       { name: "DIAMOND ISLAND", url: "#" },
-      { name: "METROPOLE", url: "#" },
+      { name: "METROPOLE", url: "/Metropole" },
       { name: "PEARL PLAZA", url: "#" },
     ],
   },
