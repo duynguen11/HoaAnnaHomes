@@ -345,15 +345,20 @@ const VinhomeGolden = () => {
             </h2>
             <div className="p-2">
               <p className="text-sm text-gray-600 mb-3">
-                Sunwah Pearl tọa lạc tại số 90 Nguyễn Hữu Cảnh, phường 22, quận
-                Bình Thạnh, Tp.HCM. Dự án sở hữu vị trí đẹp tại trung tâm quận
-                Bình Thạnh, từ vị trí này cư dân sinh sống tại Sunwah Pearl sẽ
-                thuận tiện di chuyển đến tiện ích ngoại khu như:
+                Dự án Vinhomes Golden River Ba Son nằm ngay số 2 Tôn Đức Thắng,
+                phường Bến Nghé, Quận 1, Tp.HCM. Tuyến đường lớn này nối với
+                những trục đường huyết mạch khu vực trung tâm quận 1 như Hai Bà
+                Trưng, Đồng Khởi, Lê Thánh Tôn và nối với cầu Thủ Thiêm 2 để qua
+                khu đô thị Thủ Thiêm. Bên cạnh đó, dự án còn sở hữu lợi thế tọa
+                lạc ở tuyến Metro số 1 và ga số 3, khu vực này trong tương lai
+                sẽ được cải tạo thêm để trở thành nơi giải trí, vui chơi sầm
+                uất.
               </p>
               <p className="text-sm text-gray-600 mb-3">
-                2,9km đến chợ Bến Thành, 2,4km đến tòa nhà Bitexco, 2,3km đến
-                phố đi bộ Nguyễn Huệ, 2,1km đến hầm Thủ Thiêm, 2,7km đến khu đô
-                thị Phú Mỹ Hưng
+                Khu đất dự án có giới hạn vị trí như sau: <br />- Phía Bắc giáp với
+                rạch Thị Nghè <br />- Phía Đông và Đông Nam giáp với sông Sài Gòn <br />-
+                Phía Tây và Tây Bắc giáp với đường Nguyễn Hữu Cảnh <br />- Phía Tây
+                Nam giáp với cầu Thủ Thiêm 2 và đường Tôn Đức Thắng
               </p>
               <img src={Vitri1} alt="" className="w-full h-auto rounded" />
             </div>
