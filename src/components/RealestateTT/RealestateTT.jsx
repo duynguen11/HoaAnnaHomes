@@ -15,7 +15,7 @@ const RealestateTT = () => {
       description: "Đang bán giai đoạn 4 - The OpusK",
       author: "Công ty CP BĐS Sơn Kim Land",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Metropole",
     },
     {
       imageUrl: "https://via.placeholder.com/600x400",

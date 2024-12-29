@@ -23,17 +23,17 @@ const RealestateQ1 = () => {
       description: "Đang mở bán",
       author: "Masterise Homes",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/GrandMarina",
     },
     {
       imageUrl: "https://via.placeholder.com/600x400",
       propertyCount: "",
       priceRange: "",
-      title: "Lancaster",
+      title: "Landcaster",
       description: "Đang mở bán",
       author: "",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/LandCaster",
     },
   ];
   return (

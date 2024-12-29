@@ -28,7 +28,7 @@ const RealestateQ2 = () => {
       description: "Bàn giao ngày 2/8/2023",
       author: "Công ty đầu tư BĐS SIC",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/TDGreen",
     },
     {
       imageUrl: NassimImg,
