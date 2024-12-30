@@ -27,6 +27,7 @@ import MetropolePage from "./pages/MetropolePage";
 import TDGreenPage from "./pages/TDGreenPage";
 import LandCasterPage from "./pages/LandCasterPage";
 import CrestMetropolePage from "./pages/CrestMetropolePage";
+import VillaThaoDienPage from "./pages/VillaThaoDienPage";
 import AboutPage from "./pages/AboutPage";
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
         <Route path="/TDGreen" element={<TDGreenPage />} />
         <Route path="/LandCaster" element={<LandCasterPage />} />
         <Route path="/CrestMetropole" element={<CrestMetropolePage />} />
+        <Route path="/VillaThaoDien" element={<VillaThaoDienPage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>

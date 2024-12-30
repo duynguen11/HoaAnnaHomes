@@ -87,7 +87,7 @@ const products = [
     name: "NHÀ PHỐ - VILLA",
     description: "Build strategic funnels that will convert",
     icon: BuildingStorefrontIcon,
-    submenu: [{ name: "VILLA THẢO ĐIỀN CHO THUÊ", url: "#" }],
+    submenu: [{ name: "VILLA THẢO ĐIỀN CHO THUÊ", url: "/VillaThaoDien" }],
   },
 ];
 
