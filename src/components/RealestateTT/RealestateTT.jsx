@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import MetropoleImg from "../../assets/images/RealestateTT/Metropole.jpg";
+import EmpireImg from "../../assets/images/RealestateTT/EmpireCity/Emprire.jpg";
 import TheRiverImg from "../../assets/images/RealestateTT/TheRiver.jpg";
 import TheZietImg from "../../assets/images/RealestateTT/TheZeit.jpg";
 import SalaImg from "../../assets/images/RealestateTT/Sala.jpg";
@@ -18,14 +19,14 @@ const RealestateTT = () => {
       detailUrl: "/Metropole",
     },
     {
-      imageUrl: "https://via.placeholder.com/600x400",
-      propertyCount: "",
-      priceRange: "",
+      imageUrl: EmpireImg,
+      propertyCount: "Đang cập nhật",
+      priceRange: "	122,51 - 393,43 triệu/ tháng",
       title: "The Emprie City",
       description: "Đang mở bán",
-      author: "",
+      author: "	Công ty TNHH Keppel Land VN",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/EmpireCity-TT",
     },
     {
       imageUrl: TheRiverImg,
@@ -35,7 +36,7 @@ const RealestateTT = () => {
       description: "Đã bàn giao",
       author: "Công ty cổ phần phát triển BĐS Refico",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/TheRiver-TT",
     },
     {
       imageUrl: TheZietImg,
@@ -45,7 +46,7 @@ const RealestateTT = () => {
       description: "23/7/2023 mở bán tiếp GĐ2",
       author: "Công ty GS Engineering & Construction",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/TheZietRiver-TT",
     },
     {
       imageUrl: SalaImg,
@@ -55,7 +56,7 @@ const RealestateTT = () => {
       description: "Đang mở bán",
       author: "Công ty CP Đầu tư địa ốc",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Sala-TT",
     },
   ];
   return (

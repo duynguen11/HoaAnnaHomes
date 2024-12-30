@@ -1,15 +1,15 @@
 import Header from "../components/Header/Header";
-import Manor from "../components/RealestateBT/Manor/Manor";
+import Sala from "../components/RealestateTT/Sala/Sala";
 import Footer from "../components/Footer/Footer";
 
-const ManorPageBT = () => {
+const SalaPageTT = () => {
   return (
     <>
       <Header />
-      <Manor />
+      <Sala />
       <Footer />
     </>
   );
 };
 
-export default ManorPageBT;
+export default SalaPageTT;

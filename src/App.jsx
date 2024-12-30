@@ -10,6 +10,10 @@ import SGPearlPageBT from "./pages/SGPearlPageBT";
 import SunWahPage from "./pages/SunWahPage";
 import PearlPlazaPage from "./pages/PearlPlazaPage";
 import RealestatePageTT from "./pages/RealestatePageTT";
+import EmpireCityPageTT from "./pages/EmpireCityPageTT";
+import ZietRiverPageTT from "./pages/ZietRiverPageTT";
+import SalaPageTT from "./pages/SalaPageTT";
+import TheRiverPageTT from "./pages/TheRiverPage";
 import RealestatePageQ2 from "./pages/RealestatePageQ2";
 import DiamondIslandPageQ2 from "./pages/DiamondIslandPageQ2";
 import EatonParkPage from "./pages/EatonParkPage";
@@ -38,6 +42,10 @@ function App() {
         <Route path="/SGPearl-BT" element={<SGPearlPageBT />} />
         <Route path="/SunWah-BT" element={<SunWahPage />} />
         <Route path="/realestateTT" element={<RealestatePageTT />} />
+        <Route path="/EmpireCity-TT" element={<EmpireCityPageTT />} />
+        <Route path="/TheRiver-TT" element={<TheRiverPageTT />} />
+        <Route path="/TheZietRiver-TT" element={<ZietRiverPageTT />} />
+        <Route path="/Sala-TT" element={<SalaPageTT />} />
         <Route path="/realestateQ2" element={<RealestatePageQ2 />} />
         <Route path="/DiamondIsland-Q2" element={<DiamondIslandPageQ2 />} />
         <Route path="/EatonPark" element={<EatonParkPage />} />
