@@ -58,7 +58,7 @@ const RealestateQ2 = () => {
       description: "Đã bàn giao",
       author: "Kusto Home",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/DiamondIsland-Q2",
     },
     {
       imageUrl: FelizImg,

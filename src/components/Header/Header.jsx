@@ -59,9 +59,9 @@ const products = [
     icon: BuildingOfficeIcon,
     submenu: [
       { name: "SUNWAH", url: "/SunWah-BT" },
-      { name: "DIAMOND ISLAND", url: "#" },
+      { name: "DIAMOND ISLAND", url: "/DiamondIsland-Q2" },
       { name: "METROPOLE", url: "/Metropole" },
-      { name: "PEARL PLAZA", url: "#" },
+      { name: "PEARL PLAZA", url: "/PearlPlaza" },
     ],
   },
   {
