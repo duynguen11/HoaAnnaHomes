@@ -16,6 +16,10 @@ import SalaPageTT from "./pages/SalaPageTT";
 import TheRiverPageTT from "./pages/TheRiverPage";
 import RealestatePageQ2 from "./pages/RealestatePageQ2";
 import DiamondIslandPageQ2 from "./pages/DiamondIslandPageQ2";
+import NassimPageQ2 from "./pages/NassimPageQ2";
+import Q2TĐPageQ2 from "./pages/Q2TĐPageQ2";
+import FelizPageQ2 from "./pages/FelizPageQ2";
+import DefinePageQ2 from "./pages/DefinePageQ2";
 import EatonParkPage from "./pages/EatonParkPage";
 import GrandMarinaPage from "./pages/GrandMarinaPage";
 import GlobalCityPage from "./pages/GlobalCityPage";
@@ -48,6 +52,10 @@ function App() {
         <Route path="/Sala-TT" element={<SalaPageTT />} />
         <Route path="/realestateQ2" element={<RealestatePageQ2 />} />
         <Route path="/DiamondIsland-Q2" element={<DiamondIslandPageQ2 />} />
+        <Route path="/Nassim-Q2" element={<NassimPageQ2 />} />
+        <Route path="/Q2ThaoDien-Q2" element={<Q2TĐPageQ2 />} />
+        <Route path="/Feliz-Q2" element={<FelizPageQ2 />} />
+        <Route path="/Define-Q2" element={<DefinePageQ2 />} />
         <Route path="/EatonPark" element={<EatonParkPage />} />
         <Route path="/GrandMarina" element={<GrandMarinaPage />} />
         <Route path="/GlobalCity" element={<GlobalCityPage />} />

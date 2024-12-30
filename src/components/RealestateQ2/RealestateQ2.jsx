@@ -38,7 +38,7 @@ const RealestateQ2 = () => {
       description: "Đang mở bán",
       author: "Công ty CP BĐS Sơn Kim Land",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Nassim-Q2",
     },
     {
       imageUrl: Q2Img,
@@ -48,7 +48,7 @@ const RealestateQ2 = () => {
       description: "Bàn giao năm 2021",
       author: "Đang cập nhật ...",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Q2ThaoDien-Q2",
     },
     {
       imageUrl: DiamondImg,
@@ -68,7 +68,7 @@ const RealestateQ2 = () => {
       description: "Đã bàn giao",
       author: "CapitalLand Development VN",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Feliz-Q2",
     },
     {
       imageUrl: DefineImg,
@@ -78,7 +78,7 @@ const RealestateQ2 = () => {
       description: "Sắp bàn giao",
       author: "CapitalLand Development VN",
       role: "Co-Founder / CTO",
-      detailUrl: "#",
+      detailUrl: "/Define-Q2",
     },
   ];
   return (
